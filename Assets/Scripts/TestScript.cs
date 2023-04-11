@@ -6,6 +6,7 @@ public class TestScript : MonoBehaviour
 {
 
     public float scale = 1.01f;
+    private int frameCounter = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +17,18 @@ public class TestScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localScale *= scale;
+
+        for (int i = 0; i < 1000; i++)
+        {
+            transform.localScale *= scale;
+            Debug.Log(frameCounter);
+            frameCounter++;
+        }
+
+        for (int i = 0; i < 1000; i++)
+        {
+            transform.localScale /= scale;
+        }
 
     }
 }
