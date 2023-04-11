@@ -15,7 +15,7 @@ public class ControllerScript : MonoBehaviour
     {
         RaycastHit hit;
         IControllerInteractable newInteracting;
-        if(Physics.Raycast(transform.position, transform.rotation.eulerAngles, out hit, 100, layerMask))
+        if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 100, layerMask))
         {
             newInteracting = hit.collider.gameObject.GetComponent<IControllerInteractable>();
         }
