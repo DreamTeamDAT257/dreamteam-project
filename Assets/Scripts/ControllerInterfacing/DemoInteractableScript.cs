@@ -4,33 +4,50 @@ using UnityEngine;
 
 public class DemoInteractableScript : MonoBehaviour , IControllerInteractable
 {
+    public bool clicked;
+    public bool hovered;
+
     public void Click()
     {
-        Debug.Log("Clicking");
+        clicked = true;
     }
 
     public void ClickToHover()
     {
-        Debug.Log("Hovering");
+        clicked = false;
+        hovered = true;
     }
 
     public void EndClick()
     {
-        Debug.Log("Stopped clicking");
+        clicked = false;
     }
 
     public void EndHover()
     {
-        Debug.Log("Stopped hovering");
+        hovered = false;
     }
 
     public void Hover()
     {
-        Debug.Log("Hovering");
+        hovered = true;
     }
 
     public void HoverToClick()
     {
-        Debug.Log("Clicking");
+        clicked = true;
+        hovered = false;
+    }
+
+    private void FixedUpdate()
+    {
+        if (hovered)
+        {
+            transform.position = new Vector3(0.1f, 0, 0) + transform.position;
+        }
+        if (clicked)
+        {
+            transform.position = new Vector3(-0.1f, 0, 0) + transform.position;
+        }
     }
 }
