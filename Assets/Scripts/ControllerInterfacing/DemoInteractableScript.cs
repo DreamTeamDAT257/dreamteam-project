@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DemoInteractableScript : MonoBehaviour , IControllerInteractable
 {
@@ -37,17 +38,22 @@ public class DemoInteractableScript : MonoBehaviour , IControllerInteractable
     {
         clicked = true;
         hovered = false;
+
+
+
     }
 
     private void FixedUpdate()
     {
         if (hovered)
         {
-            transform.position = new Vector3(0.1f, 0, 0) + transform.position;
+            //transform.position = new Vector3(0.1f, 0, 0) + transform.position;
+
         }
         if (clicked)
         {
-            transform.position = new Vector3(-0.1f, 0, 0) + transform.position;
+            //transform.position = new Vector3(-0.1f, 0, 0) + transform.position;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         }
     }
 }
