@@ -1,9 +1,7 @@
 package src;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -20,9 +18,13 @@ public class Main {
 
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/world","root", "password");
+            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/world","root", "Xune9jpz!!");
             Statement stmt = con.createStatement();
             ResultSet result = stmt.executeQuery(statement);
+
+            while(result.next()) {
+                System.out.println(result.getString(2));
+            }
 
             System.out.println("Hello");
 
