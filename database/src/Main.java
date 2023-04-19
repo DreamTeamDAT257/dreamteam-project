@@ -2,7 +2,6 @@ package src;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Main {
 
@@ -25,6 +24,9 @@ public class Main {
             while(result.next()) {
                 System.out.println(result.getString(2));
             }
+
+            ArrayList<ArrayList<String>> file = FileParser.getFile("../data/GDPPerCapita.csv");
+
 
             System.out.println("Hello");
 
