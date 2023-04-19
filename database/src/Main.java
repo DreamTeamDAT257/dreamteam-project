@@ -11,6 +11,10 @@ public class Main {
 
         connectMySQL("SELECT * FROM country");
 
+        ArrayList<ArrayList<String>> file = FileParser.getFile("../data/GDPPerCapita.csv");
+
+        importGDP(file);
+
     }
 
     static private void connectMySQL(String statement) {
@@ -25,14 +29,45 @@ public class Main {
                 System.out.println(result.getString(2));
             }
 
-            ArrayList<ArrayList<String>> file = FileParser.getFile("../data/GDPPerCapita.csv");
-
-
-            System.out.println("Hello");
-
         } catch (Exception e) {
             System.out.println(e);
         }
+
+    }
+
+    private static void importGDP(ArrayList<ArrayList<String>> input) {
+
+        String preamble = "INSERT INTO GDPPerCapita (countryCode, year, GDPPC) VALUES ('";
+
+        ArrayList<String> rowStatements = new ArrayList<>();
+
+        String countryCode;
+        String output;
+        ArrayList<String> years = input.get(0);
+
+        for (ArrayList<String> row : input) {
+
+            countryCode = row.get(3);
+            output = countryCode + "',";
+
+            for(int i = 4 ; i < row.size() - 1 ; i++) {
+
+                output = preamble + countryCode + "', ";
+
+                output += row.get(i);
+                output += ",";
+                output += years.get(i);
+                output += ");";
+
+                rowStatements.add(output);
+
+            }
+
+
+        }
+
+        ArrayList<String> row;
+
 
     }
 
