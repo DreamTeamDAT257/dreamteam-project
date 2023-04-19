@@ -18,7 +18,7 @@ public class Main {
 
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/world","root", "Xune9jpz!!");
+            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/world","root", ")(nETjhnklb6inF");
             Statement stmt = con.createStatement();
             ResultSet result = stmt.executeQuery(statement);
 
