@@ -37,7 +37,7 @@ public class Main {
 
     private static void importGDP(ArrayList<ArrayList<String>> input) {
 
-        String preamble = "INSERT INTO GDPPerCapita (countryCode, year, GDPPC) VALUES ('";
+        String preamble = "INSERT INTO GDPPerCapita (countryCode, GDPPC, year) VALUES ('";
 
         ArrayList<String> rowStatements = new ArrayList<>();
 
@@ -54,7 +54,14 @@ public class Main {
 
                 output = preamble + countryCode + "', ";
 
-                output += row.get(i);
+                String checker = row.get(i);
+
+                if(checker.equals("..")) {
+                    output += "NULL";
+                } else {
+                    output += row.get(i);
+                }
+
                 output += ",";
                 output += years.get(i);
                 output += ");";
@@ -65,9 +72,7 @@ public class Main {
 
 
         }
-
-        ArrayList<String> row;
-
+        System.out.println("yh");
 
     }
 
