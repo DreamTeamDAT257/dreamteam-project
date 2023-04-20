@@ -50,7 +50,7 @@ public class Main {
             countryCode = row.get(3);
             output = countryCode + "',";
 
-            for(int i = 4 ; i < row.size() - 1 ; i++) {
+            for(int i = 4 ; i < row.size() - 1 && years.get(i) != row.get(i) ; i++) {
 
                 output = preamble + countryCode + "', ";
 
