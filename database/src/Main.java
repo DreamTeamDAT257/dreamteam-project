@@ -9,13 +9,9 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Hello World!");
-
         //connectMySQL("SELECT * FROM country");
-
         ArrayList<ArrayList<String>> file = FileParser.getFile("../data/GDPPerCapita.csv");
-
         importGDP(file);
-
     }
 
     static private void connectMySQL(String statement) {
@@ -33,7 +29,6 @@ public class Main {
         } catch (Exception e) {
             System.out.println(e);
         }
-
     }
 
     private static void importGDP(ArrayList<ArrayList<String>> input) {
@@ -62,7 +57,6 @@ public class Main {
             for(int i = start ; i < row.size() - 1 && years.get(i) != row.get(i) ; i++) {
 
                 output = preamble + countryCode + "', ";
-
                 String checker = row.get(i);
 
                 if(checker.equals("..")) {
@@ -79,14 +73,8 @@ public class Main {
                 output += "\n";
 
                 rowStatements.add(output);
-
             }
-
-
         }
         System.out.println(rowStatements);
-
     }
-
-
 }
