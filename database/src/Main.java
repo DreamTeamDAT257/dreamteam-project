@@ -1,6 +1,7 @@
 package src;
 
 import java.sql.*;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Main {
@@ -9,7 +10,7 @@ public class Main {
 
         System.out.println("Hello World!");
 
-        connectMySQL("SELECT * FROM country");
+        //connectMySQL("SELECT * FROM country");
 
         ArrayList<ArrayList<String>> file = FileParser.getFile("../data/GDPPerCapita.csv");
 
@@ -44,13 +45,21 @@ public class Main {
         String countryCode;
         String output;
         ArrayList<String> years = input.get(0);
+        int start;
 
         for (ArrayList<String> row : input) {
+            if(row.get(3).contains("\"")){
+                countryCode = row.get(4);
+                output = countryCode + "',";
+                start = 5;
+            }
+            else{
+                countryCode = row.get(3);
+                output = countryCode + "',";
+                start = 4;
+            }
 
-            countryCode = row.get(3);
-            output = countryCode + "',";
-
-            for(int i = 4 ; i < row.size() - 1 && years.get(i) != row.get(i) ; i++) {
+            for(int i = start ; i < row.size() - 1 && years.get(i) != row.get(i) ; i++) {
 
                 output = preamble + countryCode + "', ";
 
@@ -59,12 +68,15 @@ public class Main {
                 if(checker.equals("..")) {
                     output += "NULL";
                 } else {
-                    output += row.get(i);
+                    double GDP = Double.parseDouble(checker);
+                    DecimalFormat df = new DecimalFormat("#.##");
+                    output += df.format(GDP);
                 }
 
                 output += ",";
                 output += years.get(i);
                 output += ");";
+                output += "\n";
 
                 rowStatements.add(output);
 
@@ -72,7 +84,7 @@ public class Main {
 
 
         }
-        System.out.println("yh");
+        System.out.println(rowStatements);
 
     }
 
