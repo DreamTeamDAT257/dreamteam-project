@@ -53,7 +53,7 @@ Sprint 2
 
 Elliot Ripa:
 - I would like to get better at working with Unity as well as how to integrate it with a database.
-- I have worked on the inplementation of a database that is to be used in regards to storing our different data points, while it is not entirely completed, the main skeleton is in place. Simply keep working towards our goals and ensure that others do the same.
+- I have worked on the inplementation of a database that is to be used in regards to storing our different data point, while it is not entirely completed, the main skeleton is in place. Simply keep working towards our goals and ensure that others do the same.
 - We started making user stories to go with our tasks, which has made it easier to distribute the work-load as one can work more in terms of the story rather than individual goals.
 
 Erik Rudberg:
@@ -75,5 +75,10 @@ Gabriel Glänte
 - I want to learn how to work with multiple programs and the infrastructure of a project in order to implement code efficiently in practice. 
 - I contributed by co-developing code for reading and categorizing data from CSV files and inserting it into SQL tables. I can help the team to do better next sprint by developing an API to integrate the data with the Unity application.
 - An improvement from last week is that we developed what we set out to do and managed to have more efficient meetings.
+
+William Johansson:
+- I want to learn both how one makes a user interface for vr and how databases can be used in unity 
+- This week I worked on UI, specifically the UI presented to the user when they are in a visualization
+- We added user stories and connected our issues to them
 
 
