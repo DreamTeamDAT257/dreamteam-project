@@ -1,0 +1,40 @@
+{
+  "countries":
+  [
+    {
+      "country": "AFG",
+      "pretty-name": "Afghanistan",
+      "information": [
+        {
+          "year": 1990,
+          "gdp": 7,
+          "trees": 45,
+          "deaths": 0
+        },
+        {
+          "year": 2000,
+          "gdp": 9,
+          "deaths": 909
+        }
+      ]
+    },
+
+    {
+      "country": "ANG",
+      "pretty-name": "Angola",
+      "information": [
+        {
+          "year": 1990,
+          "gdp": 8,
+          "trees": 45,
+          "deaths": 0
+        },
+        {
+          "year": 2000,
+          "gdp": 9,
+          "deaths": 7
+        }
+      ]
+    }
+  ]
+}
