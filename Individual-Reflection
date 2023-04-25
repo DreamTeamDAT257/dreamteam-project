@@ -47,49 +47,6 @@ Filip Eles:
 - I would like to get more comfortable with the agile processes and accountabilities, while at the same time further imrpove my Unity knowledge.
 - I took part in all meetings this sprint and I created a script to scale the cube. Next sprint I could work on improving this script.
 - Not available
-
-Sprint 2:
-
-Elliot Ripa:
-- 
--
--
-
-Erik Rudberg:
-- 
--
--
-
-Didrik Tvedt:
-- 
--
--
-
-Gabriel Glänte:
-- I want to learn how to work with multiple programs and the infrastructure of a project in order to implement code efficiently in practice. 
-- I contributed by co-developing code for reading and categorizing data from CSV files and inserting it into SQL tables. I can help the team to do better next sprint by developing an API to integrate the data with the Unity application.
-- An improvement from last week is that we developed what we set out to do and managed to have more efficient meetings.
-
-Hampus Jansson:
-- 
--
--
-
-Max Strömdal Eriksson:
-- 
--
--
-
-William Johansson:
-- 
--
--
-
-Filip Eles:
--
--
--
-
 ------------------------
 Sprint 2
 
@@ -102,6 +59,11 @@ Erik Rudberg:
 - I'm still eager to learn more about how to effectively use unity and also how to connect the scripts based in C#.
 - This week I spent some time learning how to use Unity but also contributed by creating base scene alternatives to be used in the project. Next sprint I want to put everything together.
 - We better used the user stories and issues connected to these.
+
+Didrik Tvedt:
+- I feel like i have gotten a greater understandinng of Unity, but still want to learn more about how to connect the different components and implementing the database.
+- I worked togheter at the same issues as Erik and Hampus, contributing with creating the base scenes to be used later in the project. In the next spring i hope to be able to help with the connection of the components so that we have a MVP ready.
+- We have a better understadning of user stories and have implemented this. The meetings are more effective and we are starting to get a hang on how to work more agile.
 
 Hampus Jansson:
 - I still want to learn more about Unity. It is a program with many different features and takes a long time to fully learn.
