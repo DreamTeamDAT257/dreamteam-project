@@ -3,24 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ReturnToMainMenuScript : MonoBehaviour, IControllerInteractable
+public class SendToSceneButtonScript : MonoBehaviour, IControllerInteractable
 {
-    public GameObject button;
-    public static readonly int mainMenuScene = 0;
+    public Color defaultColor;
+    public Color hoverColor;
+    public Color clickColor;
+    public Material buttonMaterial;
+    public static readonly int toScene = 0;
+
+    public void UninteractButton()
+    {
+        buttonMaterial.SetColor("_Color", defaultColor);
+    }
 
     public void HoveringButton()
     {
-        button.transform.localScale = new Vector3(0.6f, 1, 1);
+        buttonMaterial.SetColor("_Color", hoverColor);
     }
 
     public void ClickingButton()
     {
-        button.transform.localScale = new Vector3(0.2f, 1, 1);
-    }
-
-    public void UninteractButton()
-    {
-        button.transform.localScale = new Vector3(1, 1, 1);
+        buttonMaterial.SetColor("_Color", clickColor);
     }
 
 
@@ -32,7 +35,7 @@ public class ReturnToMainMenuScript : MonoBehaviour, IControllerInteractable
 
     public void ClickToHover()
     {
-        SceneManager.LoadScene(mainMenuScene);
+        SceneManager.LoadScene(toScene);
     }
 
     public void EndClick()
