@@ -2,8 +2,8 @@
   "countries":
   [
     {
-      "country": "AFG",
-      "pretty-name": "Afghanistan",
+      "code": "AFG",
+      "name": "Afghanistan",
       "information": [
         {
           "year": 1990,
@@ -20,8 +20,8 @@
     },
 
     {
-      "country": "ANG",
-      "pretty-name": "Angola",
+      "code": "ANG",
+      "name": "Angola",
       "information": [
         {
           "year": 1990,
