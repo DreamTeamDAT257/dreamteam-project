@@ -97,3 +97,8 @@ Erik Rudberg:
 - I'd like to learn more about how to put different scenes together.
 - This sprint I worked on the database aspect of the project and collectively decided on in our database group to use JSON. We made it connectable with a script.
 - We started striving more for an MVP, being more agile. 
+
+Gabriel Glänte
+- I would like to learn more about the relationship between SQL and JSON and how to efficiently translate data between actionable formats.
+- My contribution towards the team deliveries was to participate in the restructuring of the data management and development of a script in Unity which reads JSON-files with the data to be visualized by the cubes correctly.
+- An improvement from last week is that we finished developing the last component necessary for integrating the data into the program.
