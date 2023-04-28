@@ -55,6 +55,7 @@ Elliot Ripa:
 - I have worked on the inplementation of a database that is to be used in regards to storing our different data points, while it is not entirely completed, the main skeleton is in place. Simply keep working towards our goals and ensure that others do the same.
 - We started making user stories to go with our tasks, which has made it easier to distribute the work-load as one can work more in terms of the story rather than individual goals.
 
+A
 Erik Rudberg:
 - I'm still eager to learn more about how to effectively use unity and also how to connect the scripts based in C#.
 - This week I spent some time learning how to use Unity but also contributed by creating base scene alternatives to be used in the project. Next sprint I want to put everything together.
@@ -62,6 +63,7 @@ Erik Rudberg:
 
 Didrik Tvedt:
 - I feel like i have gotten a greater understandinng of Unity, but still want to learn more about how to connect the different components and implementing the database.
+A
 - I worked togheter at the same issues as Erik and Hampus, contributing with creating the base scenes to be used later in the project. In the next spring i hope to be able to help with the connection of the components so that we have a MVP ready.
 - We have a better understadning of user stories and have implemented this. The meetings are more effective and we are starting to get a hang on how to work more agile.
 
@@ -92,6 +94,11 @@ Filip Eles:
 
 ------------------------
 Sprint 3
+
+Elliot Ripa:
+- How different Unity objects interact with each other. Find an optimal way to store data in a JSON file.
+- We worked on the database aspect of the program, deciding to use one or more JSON files instead of a database to store data. We also managed to connect this to other scripts.
+- We decided to put in more effort into our workflow being agile, as well as focusing more on reaching a minimum viable product.
 
 Erik Rudberg:
 - I'd like to learn more about how to put different scenes together.
