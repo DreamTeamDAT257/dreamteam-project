@@ -105,6 +105,11 @@ Erik Rudberg:
 - This sprint I worked on the database aspect of the project and collectively decided on in our database group to use JSON. We made it connectable with a script.
 - We started striving more for an MVP, being more agile. 
 
+Didrik Tvedt:
+- I would like to learn more about coding i C and connecting the data so that we have an MVP
+- I worked mostly on the scene which will be the MVP next week, tried dowing some research on how to connect data to the drop down table and worked alittle on this dropdown.
+- We are getting close to an MVP and are getting better att dosumenting the progress
+
 Gabriel Glänte
 - I would like to learn more about the relationship between SQL and JSON and how to efficiently translate data between actionable formats.
 - My contribution towards the team deliveries was to participate in the restructuring of the data management and development of a script in Unity which reads JSON-files with the data to be visualized by the cubes correctly.
