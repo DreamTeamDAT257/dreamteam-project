@@ -119,3 +119,8 @@ William Johansson:
 - I sttil want to learn how to best make user interface for vr and how databases work. 
 - I continued working on UI this week, I finished what I had left from last week and added a simple aiming aid for the controllers.
 - We put more emphasis on working agile.
+
+Hampus Jansson:
+- I still want to learn about Unity, agile working, etc. But also how to connect everything in a program, and how it comes together.
+- I worked on the UI this week, I created dropdown menu's and connected them to the cubes so that user will be able to change the data being displayed.
+- Working well in an agile way.
