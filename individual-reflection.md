@@ -1,12 +1,14 @@
-Reflect on these questions: 
+# Individual Reflections
+
+### Reflect on these questions: 
 
 1. What do I want to learn or understand better? Consider e.g. teamwork, Scrum, agile processes, technologies etc? 
 2. What is my contribution towards the team’s deliveries? How can I help my team do better next sprint?
 3. Changes/improvements from last week's reflection?
 
-Write a few sentences. Use them next week as starting point for next reflection. Notice any improvements and celebrate the progress you made!
+### Write a few sentences. Use them next week as starting point for next reflection. Notice any improvements and celebrate the progress you made!
 -------------------------------------
-Sprint 1:
+#### Sprint 1:
 
 Elliot Ripa:
 - I want to gain a deeper understanding of the scrum methodology, for example, how to properly utilise the "testing" column in an optimal manner.
@@ -48,14 +50,13 @@ Filip Eles:
 - I took part in all meetings this sprint and I created a script to scale the cube. Next sprint I could work on improving this script.
 - Not available
 ------------------------
-Sprint 2
+#### Sprint 2
 
 Elliot Ripa:
 - I would like to get better at working with Unity as well as how to integrate it with a database.
 - I have worked on the inplementation of a database that is to be used in regards to storing our different data points, while it is not entirely completed, the main skeleton is in place. Simply keep working towards our goals and ensure that others do the same.
 - We started making user stories to go with our tasks, which has made it easier to distribute the work-load as one can work more in terms of the story rather than individual goals.
 
-A
 Erik Rudberg:
 - I'm still eager to learn more about how to effectively use unity and also how to connect the scripts based in C#.
 - This week I spent some time learning how to use Unity but also contributed by creating base scene alternatives to be used in the project. Next sprint I want to put everything together.
@@ -63,7 +64,6 @@ Erik Rudberg:
 
 Didrik Tvedt:
 - I feel like i have gotten a greater understandinng of Unity, but still want to learn more about how to connect the different components and implementing the database.
-A
 - I worked togheter at the same issues as Erik and Hampus, contributing with creating the base scenes to be used later in the project. In the next spring i hope to be able to help with the connection of the components so that we have a MVP ready.
 - We have a better understadning of user stories and have implemented this. The meetings are more effective and we are starting to get a hang on how to work more agile.
 
@@ -93,7 +93,7 @@ Filip Eles:
 - We began using user stories 
 
 ------------------------
-Sprint 3
+#### Sprint 3
 
 Elliot Ripa:
 - How different Unity objects interact with each other. Find an optimal way to store data in a JSON file.
