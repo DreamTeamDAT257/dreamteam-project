@@ -3,8 +3,11 @@ guid: 133f3d1bbb668684093899175bbc9f92
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
-  executionOrder: 100
+  defaultReferences:
+  - cubePrefab: {fileID: 1804833145720858400, guid: 2b3ffdd5a61ecff4d9c861be7a2f1359,
+      type: 3}
+  - largeCube: {instanceID: 0}
+  executionOrder: 0
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 
