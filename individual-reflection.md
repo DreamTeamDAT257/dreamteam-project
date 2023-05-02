@@ -124,3 +124,8 @@ Hampus Jansson:
 - I still want to learn about Unity, agile working, etc. But also how to connect everything in a program, and how it comes together.
 - I worked on the UI this week, I created dropdown menu's and connected them to the cubes so that user will be able to change the data being displayed.
 - Working well in an agile way.
+
+Max Strömdal Eriksson
+- I want to get more into the weeds when it comes to more complex unity coding.
+- I implemented the simpel UI
+- We worked in a way that is more aligned with the agile procces, More specefically focusing on creating a MVP.
