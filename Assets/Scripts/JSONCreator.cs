@@ -67,6 +67,20 @@ public class JSONCreator : MonoBehaviour
             return c.getInformationByYear(year);
         }
 
+        public Information getMostRecentYear(string name)
+        {
+            Country c = getCountryByName(name);
+            int year = 0;
+            foreach(Years years in c.years)
+            {
+                if(years.year > year)
+                {
+                    year = years.year;
+                }
+            }
+            return getInformation(name, year);
+        }
+
     }
 
     public CountryList myCountryList = new CountryList();
@@ -75,6 +89,8 @@ public class JSONCreator : MonoBehaviour
     void Start()
     {
         myCountryList = JsonUtility.FromJson<CountryList>(JsonFile.text);
+
+        Debug.Log(myCountryList.getMostRecentYear("Japan").trees);
 
         /* foreach(Country country in myCountryList.country)
         {
