@@ -8,8 +8,23 @@ public class MergeCubesScript : MonoBehaviour
     void Start()
     {
 
+        //MergeCube();
+
+        
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void MergeCube(GameObject parent)
+    {
+
         // Get the parent object of the transform that this script is attached to
-        GameObject parentObject = transform.parent.gameObject;
+        GameObject parentObject = parent.transform.gameObject;
 
         // Get all the child mesh filters of the parent object
         MeshFilter[] meshFilters = parentObject.GetComponentsInChildren<MeshFilter>();
@@ -26,7 +41,7 @@ public class MergeCubesScript : MonoBehaviour
         }
 
 
-        
+
 
         parentObject.AddComponent<MeshFilter>();
         parentObject.AddComponent<MeshRenderer>();
@@ -36,11 +51,5 @@ public class MergeCubesScript : MonoBehaviour
         parentObject.GetComponent<MeshRenderer>().material = meshFilters[0].GetComponent<MeshRenderer>().material;
         parentObject.SetActive(true);
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
