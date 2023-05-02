@@ -9,7 +9,7 @@ public class CubeScaleScript : MonoBehaviour
     //public float timesBigger = 173;
     public float cubesPerSide;
     public float specialCubeSide;
-    //public GameObject largeCube;
+    
     //public GameObject largeCubeFinal;
 
     // Start is called before the first frame update
@@ -17,7 +17,7 @@ public class CubeScaleScript : MonoBehaviour
     {
         //ScaleCube(1000);
         //largeCube = new GameObject();
-
+        
         
 
         //largeCubeFinal = Instantiate(largeCube);
