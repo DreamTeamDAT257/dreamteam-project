@@ -33,9 +33,10 @@
           "year": 2000,
           "gdp": 9,
           "deaths": 7
-        },
-
-	    {
+        }
+	]
+	},
+	{
       "code": "SWE",
       "name": "Sweden",
       "information": [
@@ -50,7 +51,6 @@
           "gdp": 900000,
           "deaths": 74
         }
-
       ]
     }
   ]
