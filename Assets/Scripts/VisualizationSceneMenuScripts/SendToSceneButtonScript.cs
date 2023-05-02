@@ -9,7 +9,7 @@ public class SendToSceneButtonScript : MonoBehaviour, IControllerInteractable
     public Color hoverColor;
     public Color clickColor;
     public Material buttonMaterial;
-    public static readonly int toScene = 0;
+    public int toScene = 1;
 
     public void UninteractButton()
     {
