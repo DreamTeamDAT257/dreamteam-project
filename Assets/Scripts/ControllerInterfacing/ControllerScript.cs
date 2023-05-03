@@ -5,17 +5,21 @@ using UnityEngine;
 public class ControllerScript : MonoBehaviour
 {
     public bool isRightController;
+    public GameObject aimAidObject;
 
     private static readonly int layerMask = 1 << 6;
 
     private IControllerInteractable currentlyInteracting;
     private bool currentlyClicking;
 
+    private int aimableCount;
+
     private void FixedUpdate()
     {
+        // Usage
         RaycastHit hit;
         IControllerInteractable newInteracting;
-        if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 100, layerMask))
+        if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 10, layerMask))
         {
             newInteracting = hit.collider.gameObject.GetComponent<IControllerInteractable>();
         }
@@ -111,5 +115,27 @@ public class ControllerScript : MonoBehaviour
         }
         currentlyInteracting = newInteracting;
         currentlyClicking = newClicking;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("aaaa");
+        if (other.gameObject.layer == 6)
+        {
+            aimableCount++;
+            gameObject.SetActive(true);
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.layer == 6)
+        {
+            aimableCount--;
+            if (aimableCount <= 0)
+            {
+                gameObject.SetActive(false);
+            }
+        }
     }
 }

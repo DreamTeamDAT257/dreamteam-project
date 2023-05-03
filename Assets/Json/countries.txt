@@ -1,0 +1,70 @@
+{
+  "country": [
+    {
+      "country_code": "USA",
+      "name": "United States",
+      "years": [
+        {
+          "year": 2000,
+          "information": {
+            "gdp": 10250000,
+            "deaths": 5,
+            "trees": 250000
+          }
+        },
+        {
+          "year": 2020,
+          "information": {
+            "gdp": 21427700,
+            "deaths": 6,
+            "trees": 240000
+          }
+        }
+      ]
+    },
+    {
+      "country_code": "JPN",
+      "name": "Japan",
+      "years": [
+        {
+          "year": 2000,
+          "information": {
+            "gdp": 4213000,
+            "deaths": 1,
+            "trees": 120000
+          }
+        },
+        {
+          "year": 2020,
+          "information": {
+            "gdp": 5057300,
+            "deaths": 3,
+            "trees": 118000
+          }
+        }
+      ]
+    },
+    {
+      "country_code": "IND",
+      "name": "India",
+      "years": [
+        {
+          "year": 2000,
+          "information": {
+            "gdp": 468200,
+            "deaths": 5,
+            "trees": 42000
+          }
+        },
+        {
+          "year": 2020,
+          "information": {
+            "gdp": 2617700,
+            "deaths": 3,
+            "trees": 38000
+          }
+        }
+      ]
+    }
+  ]
+}
