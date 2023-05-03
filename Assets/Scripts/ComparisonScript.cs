@@ -12,28 +12,28 @@ public class ComparisonScript : MonoBehaviour
     public float val2;
     public GameObject firstCube;
     public GameObject secondCube;
-    Dictionary<int, float> optionValues = new Dictionary<int, float>();
+    Dictionary<string, float> optionValues = new Dictionary<string, float>();
     public GameObject cubeScaleObject;
     public GameObject mergeCubeObject;
     public CubeScaleScript cubeScaleScript;
     public MergeCubesScript mergeCubesScript;
     
 
-    public void GetFirstDropdownValue(int option)
+    public void GetFirstDropdownValue(string countryName, int year)
     {
-        val1 = optionValues[option];
+        val1 = optionValues[countryName];
         CompareNumbers(val1, val2);
 
         
         
     }
-    public void GetSecondDropdownValue(int option)
+    public void GetSecondDropdownValue(string countryName, int year)
     {
         
         //dropdown.options[dropdown.value].text
 
 
-        val2 = optionValues[option];
+        val2 = optionValues[countryName];
         CompareNumbers(val1, val2);
 
 
@@ -88,9 +88,9 @@ public class ComparisonScript : MonoBehaviour
         //mergeCubesScript = new MergeCubesScript();
         val1 = 3;
         val2 = 3;
-        optionValues[0] = 3f;
-        optionValues[1] = 14f;
-        optionValues[2] = 143f;
+        optionValues["Sweden"] = 3f;
+        optionValues["Norge"] = 56f;
+        //optionValues[2] = 143f;
 
 
     }
