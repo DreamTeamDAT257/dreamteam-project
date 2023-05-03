@@ -3,59 +3,84 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class SubberDropDownScript : MonoBehaviour, IControllerInteractable
+public class SubberDropDownScript : BaseButtonScript
 {
     public string outputCountry;
     public int outputYear;
-    public CountryEvent clickedFunction;
-    public UnityEvent<string, int> a;
-
-    public void adwjadja(string s, int a)
-    {
-
-    }
 
     public bool visible;
+    public bool selected;
+
+    public Material selectedDefaultMaterial;
+    public Material selectedHoverMaterial;
+    public Material selectedClickMaterial;
+
+    public void Selected()
+    {
+        selected = true;
+    }
+
+    public void Unselected()
+    {
+        selected = false;
+    }
 
     public void Show()
     {
         visible = true;
         gameObject.SetActive(true);
     }
+    
     public void Hide()
     {
         visible = false;
         gameObject.SetActive(false);
     }
 
-    public void Hover()
+    public override void UninteractButton()
     {
 
+        if (selected)
+        {
+            meshRender.material = selectedDefaultMaterial;
+        }
+        else
+        {
+            base.UninteractButton();
+        }
     }
 
-    public void EndHover()
+    public override void HoveringButton()
     {
-
+        if (selected)
+        {
+            meshRender.material = selectedHoverMaterial;
+        }
+        else
+        {
+            base.HoveringButton();
+        }
     }
 
-    public void Click()
+    public override void ClickingButton()
     {
-
+        if (selected)
+        {
+            meshRender.material = selectedClickMaterial;
+        }
+        else
+        {
+            base.ClickingButton();
+        }
     }
 
-    public void EndClick()
+    public override void ClickToHover()
     {
-
-    }
-
-    public void HoverToClick()
-    {
-
-    }
-
-    public void ClickToHover()
-    {
-        throw new System.NotImplementedException();
+        if (visible)
+        {
+            triggerEvent.Invoke(this);
+        }
+        HoveringButton();
     }
 }
 
