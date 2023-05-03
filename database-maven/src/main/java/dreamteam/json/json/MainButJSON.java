@@ -16,32 +16,29 @@ public class MainButJSON {
 
         System.out.println("Hello World!");
         //connectMySQL("SELECT * FROM country");
-        FileParser fp = new FileParser();
-        ArrayList<ArrayList<String>> file = fp.getFile("GDPPerCapita.csv");
+
+        JSONArray hi = getJsonArray();
 
         JSONObject jsonObject = new JSONObject();
         jsonObject.append("country", "hi");
 
         System.out.println(jsonObject.toString());
 
-        importGDP(file);
+        //importGDP(file);
     }
 
-    static private void connectMySQL(String statement) {
 
-        try{
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/world","root", ")(nETjhnklb6inF");
-            Statement stmt = con.createStatement();
-            ResultSet result = stmt.executeQuery(statement);
+    private static JSONArray getJsonArray() {
 
-            while(result.next()) {
-                System.out.println(result.getString(2));
-            }
+        FileParser fp = new FileParser();
+        ArrayList<ArrayList<String>> file = fp.getFile("data.csv");
 
-        } catch (Exception e) {
-            System.out.println(e);
+        for (ArrayList<String> line : file) {
+
+            System.out.println("hi");
+
         }
+    return null;
     }
 
     private static void importGDP(ArrayList<ArrayList<String>> input) {
