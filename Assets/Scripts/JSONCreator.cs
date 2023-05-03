@@ -8,24 +8,39 @@ public class JSONCreator : MonoBehaviour
     public TextAsset JsonFile;
 
     [System.Serializable]
-    public class Information
+    public class Years
     {
         public int year;
+        public Information information;
+    }
+
+
+    [System.Serializable]
+    public class Information
+    {
         public int gdp;
-        public int trees;
         public int deaths;
+        public int trees;
+
     }
 
     [System.Serializable]
     public class Country
     {
-        public string code;
         public string name;
-        public List<Information> information;
+        public string country_code;
+        public List<Years> years;
 
-        public List<Information> getInformation()
+        public Information getInformationByYear(int year)
         {
-            return information;
+            foreach (Years years in years)
+            {
+                if (years.year == year)
+                {
+                    return years.information;
+                }
+            }
+            return null;
         }
     }
 
@@ -33,6 +48,39 @@ public class JSONCreator : MonoBehaviour
     public class CountryList
     {
         public Country[] country;
+
+        public Country getCountryByName(string name)
+        {
+            foreach (Country country in country)
+            {
+                if (country.name.Equals(name))
+                {
+                    return country;
+                }
+            }
+            return null;
+        }
+
+        public Information getInformation(string country_name, int year)
+        {
+            Country c = getCountryByName(country_name);
+            return c.getInformationByYear(year);
+        }
+
+        public Information getMostRecentYear(string name)
+        {
+            Country c = getCountryByName(name);
+            int year = 0;
+            foreach(Years years in c.years)
+            {
+                if(years.year > year)
+                {
+                    year = years.year;
+                }
+            }
+            return getInformation(name, year);
+        }
+
     }
 
     public CountryList myCountryList = new CountryList();
@@ -41,6 +89,17 @@ public class JSONCreator : MonoBehaviour
     void Start()
     {
         myCountryList = JsonUtility.FromJson<CountryList>(JsonFile.text);
+
+        Debug.Log(myCountryList.getMostRecentYear("Japan").trees);
+
+        /* foreach(Country country in myCountryList.country)
+        {
+            Debug.Log(country.country_code);
+        }
+
+        Debug.Log(myCountryList.getInformation("Japan", 2000).deaths);
+        */
+
     }
 
     // Update is called once per frame
