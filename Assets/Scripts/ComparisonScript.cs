@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ComparisonScript : MonoBehaviour
 {
@@ -14,6 +17,7 @@ public class ComparisonScript : MonoBehaviour
     public GameObject mergeCubeObject;
     public CubeScaleScript cubeScaleScript;
     public MergeCubesScript mergeCubesScript;
+    
 
     public void GetFirstDropdownValue(int option)
     {
@@ -25,6 +29,10 @@ public class ComparisonScript : MonoBehaviour
     }
     public void GetSecondDropdownValue(int option)
     {
+        
+        //dropdown.options[dropdown.value].text
+
+
         val2 = optionValues[option];
         CompareNumbers(val1, val2);
 
