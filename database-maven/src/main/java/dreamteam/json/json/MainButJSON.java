@@ -1,12 +1,13 @@
 package dreamteam.json.json;
 
 import dreamteam.json.FileParser;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class MainButJSON {
@@ -15,7 +16,14 @@ public class MainButJSON {
 
         System.out.println("Hello World!");
         //connectMySQL("SELECT * FROM country");
-        ArrayList<ArrayList<String>> file = FileParser.getFile("../data/GDPPerCapita.csv");
+        FileParser fp = new FileParser();
+        ArrayList<ArrayList<String>> file = fp.getFile("GDPPerCapita.csv");
+
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.append("country", "hi");
+
+        System.out.println(jsonObject.toString());
+
         importGDP(file);
     }
 

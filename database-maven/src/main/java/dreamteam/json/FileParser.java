@@ -8,9 +8,9 @@ import java.util.Arrays;
 import java.util.Scanner; // Import the Scanner class to read text files
 
 public class FileParser {
-    public static ArrayList<ArrayList<String>> getFile(String filepath) {
+    public ArrayList<ArrayList<String>> getFile(String filepath) {
         try {
-            URL url = FileParser.class.getResource(filepath);
+            URL url = getClass().getClassLoader().getResource("GDPPerCapita.csv");
             File myObj = new File(url.getPath());
             Scanner myReader = new Scanner(myObj);
             ArrayList<ArrayList<String>> rows = new ArrayList<>();
