@@ -129,3 +129,8 @@ Max Strömdal Eriksson
 - I want to get more into the weeds when it comes to more complex unity coding.
 - I implemented the simpel UI
 - We worked in a way that is more aligned with the agile procces, More specefically focusing on creating a MVP.
+
+Filip Eles:
+- I would like to get better at programming in pairs/smaller groups.
+- In this sprint, I created a script for comparing two values/variables and scaling cubes accordingly, which will be used in the comparison "scene".
+- We started focusing more on achieving an MVP.
