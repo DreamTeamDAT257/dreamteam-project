@@ -161,6 +161,7 @@ Max Strömdal Eriksson
 - We had more smaller meetings whcih I found helped us put together and MVP.
 
 
+
 Filip Eles:
 - I would like to get better at connecting different parts of a project to get an interactable system.
 - My focus this sprint was on connecting the comparison script with the UI to achieve an MVP and also some general improvements to the script. Next sprint I will most likely focus on connecting the script with the database.
