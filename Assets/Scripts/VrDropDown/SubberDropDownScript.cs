@@ -23,6 +23,7 @@ public class SubberDropDownScript : BaseButtonScript
     public void Unselected()
     {
         selected = false;
+         UninteractButton();
     }
 
     public void Show()
