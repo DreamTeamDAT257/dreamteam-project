@@ -169,3 +169,8 @@ Filip Eles:
 - I would like to get better at connecting different parts of a project to get an interactable system.
 - My focus this sprint was on connecting the comparison script with the UI to achieve an MVP and also some general improvements to the script. Next sprint I will most likely focus on connecting the script with the database.
 - We have now created a sufficient MVP.
+
+William Johansson:
+- I would like to learn about how our database works and how to use it. 
+- This week I created a drop down menu for selecting variants of visualizations and helped integrate the UI with the backend.
+- We created a MVP.
