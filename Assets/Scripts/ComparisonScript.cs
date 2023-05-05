@@ -50,12 +50,13 @@ public class ComparisonScript : MonoBehaviour
         secondHolderCube.transform.parent = secondCube.transform;
         //secondHolderCube.transform.position = new Vector3((5f + Mathf.Pow(firstVal, 1f / 3f)), 0f, 0f);
         secondHolderCube.transform.position = secondCube.transform.position;
-        secondHolderCube.transform.position += new Vector3((5f + Mathf.Pow(firstVal, 1f / 3f)), 0f, 0f);
+        //secondHolderCube.transform.position += new Vector3((5f + Mathf.Pow(firstVal, 1f / 3f)), 0f, 0f);
 
 
 
         if (firstVal > secondVal)
         {
+            secondHolderCube.transform.position += new Vector3((5f + firstVal/secondVal), 0f, 0f);
             cubeScaleScript.ScaleCube(1f, secondHolderCube);
             mergeCubesScript.MergeCube(secondHolderCube);
             cubeScaleScript.ScaleCube((firstVal/secondVal), firstHolderCube);
@@ -64,6 +65,7 @@ public class ComparisonScript : MonoBehaviour
         }
         else
         {
+            secondHolderCube.transform.position += new Vector3(5f, 0f, 0f);
             cubeScaleScript.ScaleCube(1f, firstHolderCube);
             mergeCubesScript.MergeCube(firstHolderCube);
             cubeScaleScript.ScaleCube((secondVal/firstVal), secondHolderCube);
