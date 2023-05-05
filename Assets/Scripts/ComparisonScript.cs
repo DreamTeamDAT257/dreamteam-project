@@ -56,7 +56,14 @@ public class ComparisonScript : MonoBehaviour
 
         if (firstVal > secondVal)
         {
-            secondHolderCube.transform.position += new Vector3((5f + firstVal/secondVal), 0f, 0f);
+            if (firstVal/secondVal < Mathf.Pow(firstVal, 1f / 3f))
+            {
+                secondHolderCube.transform.position += new Vector3(5f + firstVal / secondVal, 0f, 0f);
+            }
+            else
+            {
+                secondHolderCube.transform.position += new Vector3((5f + Mathf.Pow(firstVal, 1f / 3f)), 0f, 0f);
+            }
             cubeScaleScript.ScaleCube(1f, secondHolderCube);
             mergeCubesScript.MergeCube(secondHolderCube);
             cubeScaleScript.ScaleCube((firstVal/secondVal), firstHolderCube);
@@ -95,8 +102,8 @@ public class ComparisonScript : MonoBehaviour
         val1 = 3;
         val2 = 3;
         optionValues["Sweden"] = 3f;
-        optionValues["Norge"] = 56f;
-        optionValues["Denmark"] = 144f;
+        optionValues["Norge"] = 9000f;
+        optionValues["Denmark"] = 12000f;
         //optionValues[2] = 143f;
 
 
