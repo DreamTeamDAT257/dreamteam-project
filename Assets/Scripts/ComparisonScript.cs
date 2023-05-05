@@ -44,11 +44,15 @@ public class ComparisonScript : MonoBehaviour
         ClearAllChildren(secondCube);
         GameObject firstHolderCube = new GameObject();
         firstHolderCube.transform.parent = firstCube.transform;
-        firstHolderCube.transform.position = new Vector3(0f, 0f, 0f);
+        //firstHolderCube.transform.position = new Vector3(0f, 0f, 0f);
+        firstHolderCube.transform.position = firstCube.transform.position;
         GameObject secondHolderCube = new GameObject();
         secondHolderCube.transform.parent = secondCube.transform;
-        secondHolderCube.transform.position = new Vector3((5f + Mathf.Pow(firstVal, 1f / 3f)), 0f, 0f);
-        
+        //secondHolderCube.transform.position = new Vector3((5f + Mathf.Pow(firstVal, 1f / 3f)), 0f, 0f);
+        secondHolderCube.transform.position = secondCube.transform.position;
+        secondHolderCube.transform.position += new Vector3((5f + Mathf.Pow(firstVal, 1f / 3f)), 0f, 0f);
+
+
 
         if (firstVal > secondVal)
         {
@@ -90,6 +94,7 @@ public class ComparisonScript : MonoBehaviour
         val2 = 3;
         optionValues["Sweden"] = 3f;
         optionValues["Norge"] = 56f;
+        optionValues["Denmark"] = 144f;
         //optionValues[2] = 143f;
 
 
