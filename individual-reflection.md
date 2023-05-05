@@ -138,6 +138,11 @@ Filip Eles:
 ------------------------
 #### Sprint 4
 
+Elliot Ripa:
+- I'd like to get better at handling merge conflicts with git, and figuring out how maven works with java to handle dependencies.
+- I've discovered a good lava library for creating and working with JSON objects, which I have used to get us closer to a proper "database" JSON file.
+- We've reached the ever so elusive MVP.
+
 Didrik Tvedt:
 
 Now tht we have an MVP i would like to learn more about connecting bigger data sets to the product so that we can create more visualizations.
