@@ -153,3 +153,9 @@ Hampus Jansson:
 - I still would like to learn the things i mentioned in earlier sprints better. I have also realised that splitting tasks up that depend on each other is difficult, and I would like to learn how to better communicate what you need for your code.
 - In this sprint, I started off by trying to make the dropdown menus return the strings attached to them. We later came to the conclusion to create a new dropdown menu that could be implemented in VR, so we decided to drop the task. Afterwards I worked together with a team on databases. More specifically, we worked on a program that transfers CSV files to JSON files.
 - We are still heavily focused on reaching another MVP. We started communicating better.
+
+
+Max Strömdal Eriksson
+- I would like to understand heUnity3D model eosystem better. I would also like to get more techincal knowhow. 
+- I helped with the pliancy of the UI, I also made the redamentory Ui a bit better, helped develp the Ui for the indivudal scenes and also made The rvemped UI viable in Unity.
+- We had more smaller meetings whcih I found helped us put together and MVP.
