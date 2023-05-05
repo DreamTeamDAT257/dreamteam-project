@@ -160,7 +160,10 @@ Max Strömdal Eriksson
 - I helped with the pliancy of the UI, I also made the redamentory Ui a bit better, helped develp the Ui for the indivudal scenes and also made The rvemped UI viable in Unity.
 - We had more smaller meetings whcih I found helped us put together and MVP.
 
-
+Gabriel Glänte
+- I would like to learn how to optimize the balance between the need for every team member to understand what is going on in the project, and the need to distribute tasks efficiently so as much time as possible can be spent on productive work instead of unnecessary meetings. I also want to learn more about standard practices for aggregation and compilation of data in settings involving utilization of distributed data, instead of reinventing the wheel.
+- My contribution towards the team deliveries has been to act as the week's scrum master and distribute tasks and communicate the overarching structure and state of the project, as well as structuring the database related work and participating in the coding process.
+- An improvement from last week is that we got a fully functional MVP, and that communication in relation to the entire project structure has become more efficient.
 
 Filip Eles:
 - I would like to get better at connecting different parts of a project to get an interactable system.
