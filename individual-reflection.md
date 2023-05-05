@@ -143,6 +143,10 @@ Elliot Ripa:
 - I've discovered a good lava library for creating and working with JSON objects, which I have used to get us closer to a proper "database" JSON file.
 - We've reached the ever so elusive MVP.
 
+Erik Rudberg:
+- I'd like to become better at understanding how to most eficiently work together on big tasks and how the Scrum Master can ensure the efficiency of project. I also still want to get better at C#.
+- Worked with the data sets and working on how to most efficiently transfer them into JSON.
+- Created an MVP and also liked how we worked together this week for the bigger issues! 
 Didrik Tvedt:
 
 Now tht we have an MVP i would like to learn more about connecting bigger data sets to the product so that we can create more visualizations.
