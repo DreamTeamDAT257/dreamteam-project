@@ -138,6 +138,12 @@ Filip Eles:
 ------------------------
 #### Sprint 4
 
+Didrik Tvedt:
+
+Now tht we have an MVP i would like to learn more about connecting bigger data sets to the product so that we can create more visualizations.
+I worked with the dropdown menu, trying to make it return the string values so that we later can connect to the database. The UI team later changed the design, so this was no longer necessary. Furhter i worked with the "database team" to gather all the data in a csv file and formatted this after our needs.
+We have created a good MVP
+
 Hampus Jansson:
 - I still would like to learn the things i mentioned in earlier sprints better. I have also realised that splitting tasks up that depend on each other is difficult, and I would like to learn how to better communicate what you need for your code.
 - In this sprint, I started off by trying to make the dropdown menus return the strings attached to them. We later came to the conclusion to create a new dropdown menu that could be implemented in VR, so we decided to drop the task. Afterwards I worked together with a team on databases. More specifically, we worked on a program that transfers CSV files to JSON files.
