@@ -160,7 +160,7 @@ Hampus Jansson:
 
 
 Max Strömdal Eriksson
-- I would like to understand heUnity3D model eosystem better. I would also like to get more techincal knowhow. 
+- I would like to understand the Unity3D model eosystem better. I would also like to get more techincal knowhow. 
 - I helped with the pliancy of the UI, I also made the redamentory Ui a bit better, helped develp the Ui for the indivudal scenes and also made The rvemped UI viable in Unity.
 - We had more smaller meetings whcih I found helped us put together and MVP.
 
