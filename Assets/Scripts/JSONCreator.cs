@@ -22,6 +22,39 @@ public class JSONCreator : MonoBehaviour
         public int deaths;
         public int trees;
 
+        public int getGDP()
+        {
+            return gdp;
+        }
+
+        public int getDeaths()
+        {
+            return deaths;
+        }
+
+        public int getTrees()
+        {
+            return trees;
+        }
+
+        public int getSpecificInformation(string info)
+        {
+            switch (info)
+            {
+                case "gdp":
+                    return getGDP();
+
+                case "deaths":
+                    return getDeaths();
+
+                case "trees":
+                    return getTrees();
+
+                default:
+                    return -1;
+            }
+        }
+
     }
 
     [System.Serializable]
