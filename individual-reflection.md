@@ -147,11 +147,11 @@ Erik Rudberg:
 - I'd like to become better at understanding how to most eficiently work together on big tasks and how the Scrum Master can ensure the efficiency of project. I also still want to get better at C#.
 - Worked with the data sets and working on how to most efficiently transfer them into JSON.
 - Created an MVP and also liked how we worked together this week for the bigger issues! 
-Didrik Tvedt:
 
-Now tht we have an MVP i would like to learn more about connecting bigger data sets to the product so that we can create more visualizations.
-I worked with the dropdown menu, trying to make it return the string values so that we later can connect to the database. The UI team later changed the design, so this was no longer necessary. Furhter i worked with the "database team" to gather all the data in a csv file and formatted this after our needs.
-We have created a good MVP
+Didrik Tvedt:
+- Now tht we have an MVP i would like to learn more about connecting bigger data sets to the product so that we can create more visualizations.
+- I worked with the dropdown menu, trying to make it return the string values so that we later can connect to the database. The UI team later changed the design, so this was no longer necessary. Furhter i worked with the "database team" to gather all the data in a csv file and formatted this after our needs.
+- We have created a good MVP
 
 Hampus Jansson:
 - I still would like to learn the things i mentioned in earlier sprints better. I have also realised that splitting tasks up that depend on each other is difficult, and I would like to learn how to better communicate what you need for your code.
