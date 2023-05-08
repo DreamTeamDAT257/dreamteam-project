@@ -18,26 +18,26 @@ public class JSONCreator : MonoBehaviour
     [System.Serializable]
     public class Information
     {
-        public int gdp;
-        public int deaths;
-        public int trees;
+        public double gdp;
+        public double deaths;
+        public double trees;
 
-        public int getGDP()
+        public double getGDP()
         {
             return gdp;
         }
 
-        public int getDeaths()
+        public double getDeaths()
         {
             return deaths;
         }
 
-        public int getTrees()
+        public double getTrees()
         {
             return trees;
         }
 
-        public int getSpecificInformation(string info)
+        public double getSpecificInformation(string info)
         {
             switch (info)
             {
