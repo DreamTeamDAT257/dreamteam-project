@@ -10,7 +10,7 @@ import java.util.Scanner; // Import the Scanner class to read text files
 public class FileParser {
     public ArrayList<ArrayList<String>> getFile(String filepath) {
         try {
-            URL url = getClass().getClassLoader().getResource("GDPPerCapita.csv");
+            URL url = getClass().getClassLoader().getResource(filepath);
             File myObj = new File(url.getPath());
             Scanner myReader = new Scanner(myObj);
             ArrayList<ArrayList<String>> rows = new ArrayList<>();
