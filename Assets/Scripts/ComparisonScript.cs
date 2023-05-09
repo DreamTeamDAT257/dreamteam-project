@@ -10,31 +10,44 @@ public class ComparisonScript : MonoBehaviour
 
     public float val1;
     public float val2;
+
+    public string visualDataType;
+
     public GameObject firstCube;
     public GameObject secondCube;
+
     Dictionary<string, float> optionValues = new Dictionary<string, float>();
+
     public GameObject cubeScaleObject;
     public GameObject mergeCubeObject;
+    public GameObject jsonCreatorObject;
+
     public CubeScaleScript cubeScaleScript;
     public MergeCubesScript mergeCubesScript;
+    public JSONCreator jsonCreator;
     
 
     public void GetFirstDropdownValue(string countryName, int year)
     {
-        val1 = optionValues[countryName];
-        CompareNumbers(val1, val2);
-
-        
+        val1 = jsonCreator.myCountryList.getInformation(countryName, year).getSpecificInformation(visualDataType);
+        //val1 = optionValues[countryName];
+        if((val1 != -1) && (val2 != -1))
+        {
+            CompareNumbers(val1, val2);
+        } 
         
     }
     public void GetSecondDropdownValue(string countryName, int year)
     {
-        
+
         //dropdown.options[dropdown.value].text
-
-
-        val2 = optionValues[countryName];
-        CompareNumbers(val1, val2);
+        //val2 = optionValues[countryName];
+        val2 = jsonCreator.myCountryList.getInformation(countryName, year).getSpecificInformation(visualDataType);
+        if ((val1 != -1) && (val2 != -1))
+        {
+            CompareNumbers(val1, val2);
+        }
+        
 
 
     }
@@ -97,10 +110,11 @@ public class ComparisonScript : MonoBehaviour
     {
         cubeScaleScript = cubeScaleObject.GetComponent<CubeScaleScript>();
         mergeCubesScript = mergeCubeObject.GetComponent<MergeCubesScript>();
+        jsonCreator = jsonCreatorObject.GetComponent<JSONCreator>();
         //cubeScaleScript = new CubeScaleScript();
         //mergeCubesScript = new MergeCubesScript();
-        val1 = 3;
-        val2 = 3;
+        val1 = -1;
+        val2 = -1;
         optionValues["Sweden"] = 3f;
         optionValues["Norge"] = 9000f;
         optionValues["Denmark"] = 12000f;
