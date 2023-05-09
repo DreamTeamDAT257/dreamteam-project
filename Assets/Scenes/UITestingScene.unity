@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.59937465, g: 0.5997507, b: 0.59948814, a: 1}
+  m_IndirectSpecularColor: {r: 0.59937435, g: 0.5997503, b: 0.5994879, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1066,6 +1066,53 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00135, y: 0.007933684, z: 0.0001}
   m_Center: {x: -0.00012, y: 1.7462298e-10, z: 0}
+--- !u!1 &381793352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 381793354}
+  - component: {fileID: 381793353}
+  m_Layer: 0
+  m_Name: JSONCreatorObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &381793353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381793352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5021cd508e3bd44ba7532e6df434c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JsonFile: {fileID: 4900000, guid: a5d82bd771249464e883deeb120597f4, type: 3}
+  myCountryList:
+    country: []
+--- !u!4 &381793354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381793352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.27231383, y: 1.3381733, z: -1.4955908}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &409545612
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,12 +1144,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   val1: 0
   val2: 0
+  visualDataType: gdp
   firstCube: {fileID: 1649640971}
   secondCube: {fileID: 1502634500}
   cubeScaleObject: {fileID: 1814765697}
   mergeCubeObject: {fileID: 460180306}
+  jsonCreatorObject: {fileID: 381793352}
   cubeScaleScript: {fileID: 0}
   mergeCubesScript: {fileID: 0}
+  jsonCreator: {fileID: 0}
 --- !u!4 &409545614
 Transform:
   m_ObjectHideFlags: 0
@@ -5144,6 +5194,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sweden
+      objectReference: {fileID: 0}
+    - target: {fileID: 6102577551486125919, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6102577551486125919, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6102577551486125919, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 409545612}
+    - target: {fileID: 6102577551486125919, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6229745250295975152, guid: 1a1421ff8e7d0d2448199b54d956f31e,
         type: 3}

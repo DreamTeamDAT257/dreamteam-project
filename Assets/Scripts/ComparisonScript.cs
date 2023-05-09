@@ -27,9 +27,9 @@ public class ComparisonScript : MonoBehaviour
     public JSONCreator jsonCreator;
     
 
-    public void GetFirstDropdownValue(string countryName, int year)
+    public void GetFirstDropdownValue(string countryName)
     {
-        val1 = (float) jsonCreator.myCountryList.getInformation(countryName, year).getSpecificInformation(visualDataType);
+        val1 = (float) jsonCreator.myCountryList.getMostRecentYear(countryName).getSpecificInformation(visualDataType);
         //val1 = optionValues[countryName];
         if((val1 != -1) && (val2 != -1))
         {
@@ -37,12 +37,12 @@ public class ComparisonScript : MonoBehaviour
         } 
         
     }
-    public void GetSecondDropdownValue(string countryName, int year)
+    public void GetSecondDropdownValue(string countryName)
     {
 
         //dropdown.options[dropdown.value].text
         //val2 = optionValues[countryName];
-        val2 = (float) jsonCreator.myCountryList.getInformation(countryName, year).getSpecificInformation(visualDataType);
+        val2 = (float) jsonCreator.myCountryList.getMostRecentYear(countryName).getSpecificInformation(visualDataType);
         if ((val1 != -1) && (val2 != -1))
         {
             CompareNumbers(val1, val2);
