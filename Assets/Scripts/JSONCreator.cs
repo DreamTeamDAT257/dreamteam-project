@@ -86,7 +86,7 @@ public class JSONCreator : MonoBehaviour
         {
             foreach (Country country in country)
             {
-                if (country.name.Equals(name))
+                if (country.name.ToUpper().Equals(name.ToUpper()))
                 {
                     return country;
                 }
@@ -103,6 +103,7 @@ public class JSONCreator : MonoBehaviour
         public Information getMostRecentYear(string name)
         {
             Country c = getCountryByName(name);
+            Debug.Log(c);
             int year = 0;
             foreach(Years years in c.years)
             {
