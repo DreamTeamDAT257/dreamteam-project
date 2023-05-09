@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.59937435, g: 0.5997503, b: 0.5994879, a: 1}
+  m_IndirectSpecularColor: {r: 0.59937465, g: 0.5997507, b: 0.59948814, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5203,17 +5203,32 @@ PrefabInstance:
     - target: {fileID: 6102577551486125919, guid: 1a1421ff8e7d0d2448199b54d956f31e,
         type: 3}
       propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6102577551486125919, guid: 1a1421ff8e7d0d2448199b54d956f31e,
         type: 3}
       propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 409545612}
+      objectReference: {fileID: 409545613}
     - target: {fileID: 6102577551486125919, guid: 1a1421ff8e7d0d2448199b54d956f31e,
         type: 3}
       propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6102577551486125919, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GetFirstDropdownValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6102577551486125919, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ComparisonScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6102577551486125919, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6229745250295975152, guid: 1a1421ff8e7d0d2448199b54d956f31e,
         type: 3}
@@ -5264,6 +5279,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sweden
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720151014747264189, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720151014747264189, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720151014747264189, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 409545613}
+    - target: {fileID: 8720151014747264189, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720151014747264189, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GetSecondDropdownValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720151014747264189, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ComparisonScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720151014747264189, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a1421ff8e7d0d2448199b54d956f31e, type: 3}
