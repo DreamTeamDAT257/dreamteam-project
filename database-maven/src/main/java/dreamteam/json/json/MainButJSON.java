@@ -15,30 +15,74 @@ public class MainButJSON {
     public static void main(String[] args) {
 
         System.out.println("Hello World!");
-        //connectMySQL("SELECT * FROM country");
 
-        JSONArray hi = getJsonArray();
+        JSONArray hi = getJsonArray("data.csv");
 
-        JSONObject jsonObject = new JSONObject();
-        jsonObject.append("country", "hi");
 
-        System.out.println(jsonObject.toString());
 
-        //importGDP(file);
+        //System.out.println(jsonObject.toString());
+
     }
 
 
-    private static JSONArray getJsonArray() {
+    private static JSONArray getJsonArray(String filepath) {
+
+        JSONArray countries = new JSONArray();
 
         FileParser fp = new FileParser();
-        ArrayList<ArrayList<String>> file = fp.getFile("data.csv");
+        ArrayList<ArrayList<String>> file = fp.getFile(filepath);
 
         for (ArrayList<String> line : file) {
 
-            System.out.println("hi");
+            addToJSON(countries, line);
+
 
         }
     return null;
+    }
+
+    private static JSONArray addToJSON(JSONArray countries, ArrayList<String> line) {
+
+        findOrCreateCountry(countries, "USA");
+
+        String country = line.get(0);
+        String year = line.get(1);
+        String data = line.get(2);
+        String type = translateType(line.get(3));
+
+        //if(countries.)
+
+        System.out.println("hi");
+        return null;
+    }
+
+    private static int findOrCreateCountry(JSONArray countries, String country) {
+
+        JSONObject countryObject = new JSONObject();
+        countryObject.append("country_code", country);
+
+        /*for(int i = 0 ; i <= countries.length() ; i++) {
+            if(countries.get(i).equals())
+        }*/
+        return -1;
+    }
+
+    private static String translateType(String input) {
+
+        return switch (input) {
+            case "CME_MRY0T4: Under-five mortality rate" -> "mortality";
+            case "DM_LIFE_EXP: Life expectancy" -> "life_expectancy";
+            case "DM_POP_TOT: Total population" -> "population";
+            case "ECON_GVT_EDU_EXP_PTGDP: government expenditure on education (% GDP)" -> "education_spending";
+            case "ECON_GVT_HLTH_EXP_PTGDP: government expenditure on health (% GDP)" -> "health_spending";
+            case "ED_15-24_LR: Youth literacy rate for 15-24 years" -> "youth_literacy";
+            case "ED_CR_L1: Completion rate for children of primary school age" -> "primary_school_rate";
+            case "ED_CR_L2: Completion rate for adolescents of lower secondary school age" -> "secondary_school_rate";
+            case "NT_SANT_10_19_BAZ_NE2_MOD: Prevalence of thinness among children aged 10-19 years, BMI < -2 standard deviations below the median (Crude estimate)" -> "thinness";
+            case "SPP_GDPPC: GDP per capita (current US$)" -> "gdp";
+            default -> null;
+        };
+
     }
 
     private static void importGDP(ArrayList<ArrayList<String>> input) {
