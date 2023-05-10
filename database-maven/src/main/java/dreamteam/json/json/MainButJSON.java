@@ -3,17 +3,23 @@ package dreamteam.json.json;
 import dreamteam.json.FileParser;
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class MainButJSON {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         System.out.println("Hello World!");
 
         JSONObject hi = getJsonObject("data.csv");
 
         System.out.println(hi.toString());
+
+        whenWriteStringUsingBufferedWritter_thenCorrect("newJSON.txt", hi.toString());
 
     }
 
@@ -146,5 +152,14 @@ public class MainButJSON {
         };
 
     }
+
+    public static void whenWriteStringUsingBufferedWritter_thenCorrect(String fileName, String text)
+            throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
+        writer.write(text);
+
+        writer.close();
+    }
+
 
 }
