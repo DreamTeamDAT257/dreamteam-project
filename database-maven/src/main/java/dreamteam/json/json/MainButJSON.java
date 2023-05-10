@@ -3,11 +3,6 @@ package dreamteam.json.json;
 import dreamteam.json.FileParser;
 import org.json.JSONArray;
 import org.json.JSONObject;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
 import java.util.ArrayList;
 
 public class MainButJSON {
@@ -16,16 +11,14 @@ public class MainButJSON {
 
         System.out.println("Hello World!");
 
-        JSONArray hi = getJsonArray("data.csv");
+        JSONObject hi = getJsonObject("data.csv");
 
-
-
-        //System.out.println(jsonObject.toString());
+        System.out.println(hi.toString());
 
     }
 
 
-    private static JSONArray getJsonArray(String filepath) {
+    private static JSONObject getJsonObject(String filepath) {
 
         JSONArray countries = new JSONArray();
 
@@ -38,33 +31,102 @@ public class MainButJSON {
 
 
         }
-    return null;
+
+        JSONObject result = new JSONObject();
+
+        result.put("country", countries);
+
+        return result;
+
     }
 
     private static JSONArray addToJSON(JSONArray countries, ArrayList<String> line) {
 
-        findOrCreateCountry(countries, "USA");
+        if(line.get(0).equals("code")) {
+            return null;
+        }
 
         String country = line.get(0);
         String year = line.get(1);
         String data = line.get(2);
         String type = translateType(line.get(3));
 
-        //if(countries.)
+        boolean countryExists = false;
+        int countryIndex = -1;
 
-        System.out.println("hi");
-        return null;
-    }
+        for (int i = 0 ; i < countries.length() ; i++) {
+            if(countries.getJSONObject(i).get("country-code").equals(country)) {
+                countryExists = true;
+                countryIndex = i;
+                break;
+            }
+        }
 
-    private static int findOrCreateCountry(JSONArray countries, String country) {
+        if(!countryExists) {
+            JSONObject newCountry = new JSONObject();
+            newCountry.put("country-code", country);
 
-        JSONObject countryObject = new JSONObject();
-        countryObject.append("country_code", country);
+            JSONObject yearObject = new JSONObject();
 
-        /*for(int i = 0 ; i <= countries.length() ; i++) {
-            if(countries.get(i).equals())
-        }*/
-        return -1;
+            yearObject.put("year", year);
+
+            JSONObject information = new JSONObject();
+            information.put(type, data);
+
+            yearObject.put("information", information);
+
+            JSONArray yearsArray = new JSONArray();
+            yearsArray.put(yearObject);
+
+            newCountry.put("years", yearsArray);
+
+            countries.put(newCountry);
+
+            return countries;
+        }
+
+        JSONObject countryGotten = countries.getJSONObject(countryIndex);       //Get the country.
+
+
+        JSONArray years = countryGotten.getJSONArray("years");              //Get the list of years.
+
+        boolean yearExists = false;                                             //Assume year does not exist.
+        int yearIndex = -1;
+
+        for (int i = 0 ; i < years.length() ; i++) {
+            if(years.getJSONObject(i).get("year") == year) {
+                yearExists = true;
+                yearIndex = i;
+                break;
+            }
+        }
+
+        if(!yearExists) {
+
+            JSONObject newYear = new JSONObject();
+            newYear.put("year", year);
+
+            JSONObject information = new JSONObject();
+            information.put(type, data);
+
+            newYear.put("information", information);
+
+            countryGotten.getJSONArray("years").put(newYear);
+
+            return countries;
+
+        }
+
+        //if the country exists, but that year already has data points.
+
+        JSONObject gottenYear = years.getJSONObject(yearIndex);
+
+        JSONObject information = gottenYear.getJSONObject("information");
+
+        information.put(type, data);
+
+        return countries;
+
     }
 
     private static String translateType(String input) {
@@ -78,61 +140,11 @@ public class MainButJSON {
             case "ED_15-24_LR: Youth literacy rate for 15-24 years" -> "youth_literacy";
             case "ED_CR_L1: Completion rate for children of primary school age" -> "primary_school_rate";
             case "ED_CR_L2: Completion rate for adolescents of lower secondary school age" -> "secondary_school_rate";
-            case "NT_SANT_10_19_BAZ_NE2_MOD: Prevalence of thinness among children aged 10-19 years, BMI < -2 standard deviations below the median (Crude estimate)" -> "thinness";
+            case "\"NT_SANT_10_19_BAZ_NE2_MOD: Prevalence of thinness among children aged 10-19 years" -> "thinness";
             case "SPP_GDPPC: GDP per capita (current US$)" -> "gdp";
             default -> null;
         };
 
     }
 
-    private static void importGDP(ArrayList<ArrayList<String>> input) {
-
-        //JSONObject jsonObject = new JSONObject;
-
-        /*
-
-        ArrayList<String> rowStatements = new ArrayList<>();
-
-        String countryCode;
-        String output;
-        ArrayList<String> years = input.get(0);
-        int start;
-
-        for (ArrayList<String> row : input) {
-            if(row.get(3).contains("\"")){
-                countryCode = row.get(4);
-                output = countryCode + "',";
-                start = 5;
-            }
-            else{
-                countryCode = row.get(3);
-                output = countryCode + "',";
-                start = 4;
-            }
-
-            for(int i = start ; i < row.size() - 1 && years.get(i) != row.get(i) ; i++) {
-
-                output = preamble + countryCode + "', ";
-                String checker = row.get(i);
-
-                if(checker.equals("..")) {
-                    output += "NULL";
-                } else {
-                    double GDP = Double.parseDouble(checker);
-                    DecimalFormat df = new DecimalFormat("#.##");
-                    output += df.format(GDP);
-                }
-
-                output += ",";
-                output += years.get(i);
-                output += ");";
-                output += "\n";
-
-                rowStatements.add(output);
-            }
-        }
-        System.out.println(rowStatements);
-
-         */
-    }
 }
