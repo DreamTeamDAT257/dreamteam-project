@@ -1,5 +1,6 @@
 package dreamteam.json.json;
 
+import com.neovisionaries.i18n.CountryCode;
 import dreamteam.json.FileParser;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -17,7 +18,13 @@ public class MainButJSON {
 
         JSONObject hi = getJsonObject("data.csv");
 
-        System.out.println(hi.toString());
+        //System.out.println(hi.toString());
+
+        CountryCode cc = CountryCode.getByAlpha3Code("ALB");
+
+        System.out.println(cc.getName());
+
+        //System.out.println();
 
         whenWriteStringUsingBufferedWritter_thenCorrect("newJSON.txt", hi.toString());
 
@@ -71,6 +78,11 @@ public class MainButJSON {
         if(!countryExists) {
             JSONObject newCountry = new JSONObject();
             newCountry.put("country-code", country);
+            if(country.equals("CHI")) {                     //The library I imported doesn't seem to recognise Chile?
+                newCountry.put("name", "Chile");
+            } else {
+                newCountry.put("name", CountryCode.getByAlpha3Code(country).getName());
+            }
 
             JSONObject yearObject = new JSONObject();
 
