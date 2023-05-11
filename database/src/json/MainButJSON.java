@@ -1,20 +1,22 @@
-package dreamteam.json;
+package src.json;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
+import src.FileParser;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
-public class Main {
+public class MainButJSON {
 
     public static void main(String[] args) {
 
         System.out.println("Hello World!");
         //connectMySQL("SELECT * FROM country");
-       // ArrayList<ArrayList<String>> file = FileParser.getFile("../data/GDPPerCapita.csv");
-       // importGDP(file);
+        ArrayList<ArrayList<String>> file = FileParser.getFile("../data/GDPPerCapita.csv");
+        importGDP(file);
     }
 
     static private void connectMySQL(String statement) {
@@ -36,7 +38,9 @@ public class Main {
 
     private static void importGDP(ArrayList<ArrayList<String>> input) {
 
-        String preamble = "INSERT INTO GDPPerCapita (countryCode, GDPPC, year) VALUES ('";
+        //JSONObject jsonObject = new JSONObject;
+
+        /*
 
         ArrayList<String> rowStatements = new ArrayList<>();
 
@@ -79,5 +83,7 @@ public class Main {
             }
         }
         System.out.println(rowStatements);
+
+         */
     }
 }
