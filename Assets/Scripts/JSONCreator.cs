@@ -18,40 +18,105 @@ public class JSONCreator : MonoBehaviour
     [System.Serializable]
     public class Information
     {
+        public double mortality;
+        public double life_expectancy;
+        public double population;
+        public double education_spending;
+        public double health_spending;
+        public double youth_literacy;
+        public double primary_school_rate;
+        public double secondary_school_rate;
+        public double thinness;
         public double gdp;
-        public double deaths;
-        public double trees;
+
+        public double getMortality()
+        {
+            return mortality;
+        }
+
+        public double getLifeExpectancy()
+        {
+            return life_expectancy;
+        }
+
+        public double getPopulation()
+        {
+            return population;
+        }
+
+        public double getEducationSpending()
+        {
+            return education_spending;
+        }
+
+        public double getHealthSpending()
+        {
+            return health_spending;
+        }
+
+        public double getYouthLiteracy()
+        {
+            return youth_literacy;
+        }
+
+        public double getPrimarySchoolRate()
+        {
+            return primary_school_rate;
+        }
+
+        public double getSecondarySchoolRate()
+        {
+            return secondary_school_rate;
+        }
+
+        public double getThinness()
+        {
+            return thinness;
+        }
 
         public double getGDP()
         {
             return gdp;
         }
 
-        public double getDeaths()
-        {
-            return deaths;
-        }
 
-        public double getTrees()
-        {
-            return trees;
-        }
 
         public double getSpecificInformation(string info)
         {
             switch (info)
             {
+                case "mortality":
+                    return getMortality();
+
+                case "life_expectancy":
+                    return getLifeExpectancy();
+
+                case "population":
+                    return getPopulation();
+
+                case "education_spending":
+                    return getEducationSpending();
+
+                case "health_spending":
+                    return getHealthSpending();
+
+                case "youth_literacy":
+                    return getYouthLiteracy();
+
+                case "primary_school_rate":
+                    return getPrimarySchoolRate();
+
+                case "secondary_school_rate":
+                    return getSecondarySchoolRate();
+
+                case "thinness":
+                    return getThinness();
+
                 case "gdp":
                     return getGDP();
 
-                case "deaths":
-                    return getDeaths();
-
-                case "trees":
-                    return getTrees();
-
                 default:
-                    return -1;
+                    return 0;
             }
         }
 
@@ -123,7 +188,9 @@ public class JSONCreator : MonoBehaviour
     {
         myCountryList = JsonUtility.FromJson<CountryList>(JsonFile.text);
 
-        Debug.Log(myCountryList.getMostRecentYear("Japan").trees);
+        Debug.Log(myCountryList.getCountryByName("Japan").years[0].information.getSpecificInformation("mortality"));
+
+        //Debug.Log(myCountryList.getMostRecentYear("Japan").trees);
 
         /* foreach(Country country in myCountryList.country)
         {
