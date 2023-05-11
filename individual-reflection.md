@@ -178,3 +178,11 @@ William Johansson:
 - I would like to learn about how our database works and how to use it. 
 - This week I created a drop down menu for selecting variants of visualizations and helped integrate the UI with the backend.
 - We created a MVP.
+
+------------------------
+#### Sprint 5
+
+William Johansson:
+- I would like to learn about how our database works and how to use it. 
+- This sprint I created a virtual keyboard for user input and helped integrate the it with the visualizing.
+- .
