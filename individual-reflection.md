@@ -186,3 +186,8 @@ William Johansson:
 - I would like to learn about how our database works and how to use it. 
 - This sprint I created a virtual keyboard for user input and helped integrate the it with the visualizing.
 - .
+
+Hampus Jansson:
+- I would like to really understand the connection between our JSON file and our Unity scripts.
+- I have created various scenes that the user will be able to choose between.
+- We had effective meetings, and came up with a good plan to finish up.
