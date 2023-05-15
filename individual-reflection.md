@@ -192,7 +192,6 @@ Erik Rudberg:
 - Worked on developing some of the scenes to be used in end product. 
 - We've continued to come closer to integrate all parts in the integration of finished product. 
 
-
 Didrik Tvedt:
 - The next sprint, which will be the last, I would like to understand how connection of all parts can be done. Especially connecting the JSON to the keyboard created last sprint.
 - This sprint i worked on developing the scenes used in the end product. As of now we have 4 developed scenes that the user can choose between.
@@ -203,13 +202,10 @@ Max Strömdal Eriksson
 - I have made the main menu interactable. I have also put text that describes the scene in the main menu. 
 - We understood a bit more regarding how to manage the abstract domain of certain tasks. Such as understanding what tasks are appropriate from an agile perspective in the long run.
 
-
-
-
 William Johansson:
-- I would like to learn about how our database works and how to use it. 
+- I know how to use our database but would like to understand it.
 - This sprint I created a virtual keyboard for user input and helped integrate the it with the visualizing.
-- .
+- We are focusing on finishing our product.
 
 Hampus Jansson:
 - I would like to really understand the connection between our JSON file and our Unity scripts.
