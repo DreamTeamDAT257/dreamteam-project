@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class VrKeyboardController : MonoBehaviour
 {
     public UnityEvent<string> inputListeners;
+    public UnityEvent<int> inputListeners2;
     public TextMeshPro displayText;
 
     private string currentText = "";
@@ -19,6 +20,14 @@ public class VrKeyboardController : MonoBehaviour
     public void SendTyped()
     {
         inputListeners.Invoke(currentText);
+    }
+
+    public void SendNumb()
+    {
+        //gör om text till int
+        int currentNum = int.Parse(currentText);
+        inputListeners2.Invoke(currentNum);
+        
     }
 
     public void RemoveLetter()
