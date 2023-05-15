@@ -187,6 +187,11 @@ Elliot Ripa
 - I have tinkered with details regarding our database-esque JSON-file.
 - We have gotten quite close to reaching a sufficiently advanced final product.
 
+Erik Rudberg:
+- For the next sprint I'd like to learn how to connect everything together, how to use the database, unity scripts and how it all comes together visually. 
+- Worked on developing some of the scenes to be used in end product. 
+- We've continued to come closer to integrate all parts in the integration of finished product. 
+
 
 Didrik Tvedt:
 - The next sprint, which will be the last, I would like to understand how connection of all parts can be done. Especially connecting the JSON to the keyboard created last sprint.
