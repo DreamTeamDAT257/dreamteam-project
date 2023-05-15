@@ -182,6 +182,12 @@ William Johansson:
 ------------------------
 #### Sprint 5
 
+Elliot Ripa
+- I want to learn how to make a compelling and descriptive presentation of a software-oriented project. 
+- I have tinkered with details regarding our database-esque JSON-file.
+- We have gotten quite close to reaching a sufficiently advanced final product.
+
+
 Didrik Tvedt:
 - The next sprint, which will be the last, I would like to understand how connection of all parts can be done. Especially connecting the JSON to the keyboard created last sprint.
 - This sprint i worked on developing the scenes used in the end product. As of now we have 4 developed scenes that the user can choose between.
