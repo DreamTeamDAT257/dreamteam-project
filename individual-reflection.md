@@ -200,8 +200,9 @@ Didrik Tvedt:
 
 Max Strömdal Eriksson
 - Would like to understand how to move objects in unity with code.
-- I have made the main interactable so one may enter a scene. I have also put text that describes the scene in the main menu. 
+- I have made the main menu interactable. I have also put text that describes the scene in the main menu. 
 - We understood a bit more regarding how to manage the abstract domain of certain tasks. Such as understanding what tasks are appropriate from an agile perspective in the long run.
+
 
 
 
