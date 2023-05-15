@@ -33,15 +33,11 @@ public class VrKeyboardController : MonoBehaviour
     {
         if ((Time.fixedTime*2) % 2 > 0.5)
         {
-            //displayText.SetText();
             displayText.text = " " + currentText + "|";
-            Debug.Log("Odd");
         }
         else
         {
-            //displayText.SetText();
             displayText.text = currentText;
-            Debug.Log("Even");
         }
     }
 
