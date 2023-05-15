@@ -194,6 +194,7 @@ public class JSONCreator : MonoBehaviour
             return getInformation(name, year);
         }
 
+
         public Country[] getCountriesByDataType(string dataType)
         {
             List<Country> valids = new List<Country>(0);
