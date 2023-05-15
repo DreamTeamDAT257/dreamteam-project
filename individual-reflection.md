@@ -177,10 +177,16 @@ Filip Eles:
 William Johansson:
 - I would like to learn about how our database works and how to use it. 
 - This week I created a drop down menu for selecting variants of visualizations and helped integrate the UI with the backend.
-- We created a MVP.
+- The teamwork continue to improve and the bigest improvement product wise is that we have all the needed parts fully developed and ready for integration.
 
 ------------------------
 #### Sprint 5
+
+Didrik Tvedt:
+- The next sprint, which will be the last, I would like to understand how connection of all parts can be done.Especially connecting the JSON to the keyboard created last sprint.
+- This sprint i worked on developing the scenes used in the end product. As of now we have 4 developed scenes that the user can choose between.
+- We have created a good MVP
+
 
 William Johansson:
 - I would like to learn about how our database works and how to use it. 
