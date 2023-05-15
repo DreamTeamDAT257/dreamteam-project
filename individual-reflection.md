@@ -215,3 +215,8 @@ Hampus Jansson:
 - I would like to really understand the connection between our JSON file and our Unity scripts.
 - I have created various scenes that the user will be able to choose between.
 - We had effective meetings, and came up with a good plan to finish up.
+
+Filip Eles:
+- I would like to know more about our database and the connection with the script and UI.
+- My focus this sprint was on connecting the comparison script with the database so that cubes are scaled when you type things with the UI keyboard.
+- We connected the script with the database.
