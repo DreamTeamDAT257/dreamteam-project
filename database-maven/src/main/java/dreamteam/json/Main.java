@@ -1,5 +1,8 @@
 package dreamteam.json;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.sql.*;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -10,8 +13,8 @@ public class Main {
 
         System.out.println("Hello World!");
         //connectMySQL("SELECT * FROM country");
-        ArrayList<ArrayList<String>> file = FileParser.getFile("../data/GDPPerCapita.csv");
-        importGDP(file);
+       // ArrayList<ArrayList<String>> file = FileParser.getFile("../data/GDPPerCapita.csv");
+       // importGDP(file);
     }
 
     static private void connectMySQL(String statement) {

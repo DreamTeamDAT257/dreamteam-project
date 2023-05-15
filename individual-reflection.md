@@ -177,4 +177,46 @@ Filip Eles:
 William Johansson:
 - I would like to learn about how our database works and how to use it. 
 - This week I created a drop down menu for selecting variants of visualizations and helped integrate the UI with the backend.
-- We created a MVP.
+-  We created a MVP.
+
+------------------------
+#### Sprint 5
+
+Elliot Ripa
+- I want to learn how to make a compelling and descriptive presentation of a software-oriented project. 
+- I have tinkered with details regarding our database-esque JSON-file.
+- We have gotten quite close to reaching a sufficiently advanced final product.
+
+Erik Rudberg:
+- For the next sprint I'd like to learn how to connect everything together, how to use the database, unity scripts and how it all comes together visually. 
+- Worked on developing some of the scenes to be used in end product. 
+- We've continued to come closer to integrate all parts in the integration of finished product. 
+
+
+Didrik Tvedt:
+- The next sprint, which will be the last, I would like to understand how connection of all parts can be done. Especially connecting the JSON to the keyboard created last sprint.
+- This sprint i worked on developing the scenes used in the end product. As of now we have 4 developed scenes that the user can choose between.
+- We have continued with great teamwork and the biggest changes product wise is that we now have all the improved parts ready for integration to create the end product.
+
+Max Strömdal Eriksson
+- Would like to understand how to move objects in unity with code.
+- I have made the main menu interactable. I have also put text that describes the scene in the main menu. 
+- We understood a bit more regarding how to manage the abstract domain of certain tasks. Such as understanding what tasks are appropriate from an agile perspective in the long run.
+
+
+
+
+William Johansson:
+- I would like to learn about how our database works and how to use it. 
+- This sprint I created a virtual keyboard for user input and helped integrate the it with the visualizing.
+- .
+
+Hampus Jansson:
+- I would like to really understand the connection between our JSON file and our Unity scripts.
+- I have created various scenes that the user will be able to choose between.
+- We had effective meetings, and came up with a good plan to finish up.
+
+Filip Eles:
+- I would like to know more about our database and the connection with the script and UI.
+- My focus this sprint was on connecting the comparison script with the database so that cubes are scaled when you type things with the UI keyboard.
+- We connected the script with the database.
