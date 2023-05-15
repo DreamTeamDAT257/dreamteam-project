@@ -198,6 +198,12 @@ Didrik Tvedt:
 - This sprint i worked on developing the scenes used in the end product. As of now we have 4 developed scenes that the user can choose between.
 - We have continued with great teamwork and the biggest changes product wise is that we now have all the improved parts ready for integration to create the end product.
 
+Max Strömdal Eriksson
+- Would like to understand how to move objects in unity with code.
+- I have made the main interactable so one may enter a scene. I have also put text that describes the scene in the main menu. 
+- We understood a bit more regarding how to manage the abstract domain of certain tasks. Such as understanding what tasks are appropriate from an agile perspective in the long run.
+
+
 
 William Johansson:
 - I would like to learn about how our database works and how to use it. 
