@@ -216,3 +216,8 @@ Filip Eles:
 - I would like to know more about our database and the connection with the script and UI.
 - My focus this sprint was on connecting the comparison script with the database so that cubes are scaled when you type things with the UI keyboard.
 - We connected the script with the database.
+
+Gabriel Glänte:
+- I want to learn how to balance the long-term effectiveness of applying object oriented programming design principles, that require planning and careful thought, with the efficiency of the agile methodology, that results in functioning products in relatively limited time.
+- My contribution towards the team deliveries this sprint was to continue helping make sure the team is on board with the purpose and state of all parts of the product, by defining and distributing tasks, and to co-write code for the comparison script.
+- Improvements from last week was that we fleshed out concrete ideas and tasks necessary to improve upon the MVP, such as by exchanging test files for end version files. 
