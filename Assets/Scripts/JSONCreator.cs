@@ -140,6 +140,21 @@ public class JSONCreator : MonoBehaviour
             }
             return null;
         }
+
+        public Years[] getValidYears(string dataType)
+        {
+            List<Years> valids = new List<Years>(0);
+
+            foreach (Years year in years)
+            {
+                if (year.information.getSpecificInformation(dataType) != 0)
+                {
+                    valids.Add(year);
+                }
+            }
+
+            return valids.ToArray();
+        }
     }
 
     [System.Serializable]
@@ -168,11 +183,10 @@ public class JSONCreator : MonoBehaviour
         public Information getMostRecentYear(string name)
         {
             Country c = getCountryByName(name);
-            Debug.Log(c);
             int year = 0;
-            foreach(Years years in c.years)
+            foreach (Years years in c.years)
             {
-                if(years.year > year)
+                if (years.year > year)
                 {
                     year = years.year;
                 }
@@ -180,6 +194,20 @@ public class JSONCreator : MonoBehaviour
             return getInformation(name, year);
         }
 
+        public Country[] getCountriesByDataType(string dataType)
+        {
+            List<Country> valids = new List<Country>(0);
+
+            foreach (Country country in country)
+            {
+                if (country.getValidYears(dataType).Length > 0)
+                {
+                    valids.Add(country);
+                }
+            }
+
+            return valids.ToArray();
+        }
     }
 
     public CountryList myCountryList = new CountryList();
@@ -188,24 +216,11 @@ public class JSONCreator : MonoBehaviour
     void Start()
     {
         myCountryList = JsonUtility.FromJson<CountryList>(JsonFile.text);
-
-        Debug.Log(myCountryList.getCountryByName("Japan").years[0].information.getSpecificInformation("mortality"));
-
-        //Debug.Log(myCountryList.getMostRecentYear("Japan").trees);
-
-        /* foreach(Country country in myCountryList.country)
-        {
-            Debug.Log(country.country_code);
-        }
-
-        Debug.Log(myCountryList.getInformation("Japan", 2000).deaths);
-        */
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
