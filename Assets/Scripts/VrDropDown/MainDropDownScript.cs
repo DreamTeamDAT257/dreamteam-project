@@ -15,7 +15,7 @@ public class MainDropDownScript : MonoBehaviour, IControllerInteractable
     public SubberDropDownScript[] subbs;
     public bool Dropped;
 
-    public UnityEvent<string, int> onNewSelection;
+    public UnityEvent<string> onNewSelection;
 
     private SubberDropDownScript currentSelected;
 
@@ -52,7 +52,7 @@ public class MainDropDownScript : MonoBehaviour, IControllerInteractable
 
         currentSelected = ((SubberDropDownScript)selectedBackReferance);
 
-        onNewSelection.Invoke(currentSelected.outputCountry, currentSelected.outputYear);
+        onNewSelection.Invoke(currentSelected.outputCountry);
 
         currentSelected.Selected();
     }
