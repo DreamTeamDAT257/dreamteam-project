@@ -26,7 +26,7 @@ public class BaseButtonScript : MonoBehaviour, IControllerInteractable
 
     public virtual void ClickingButton()
     {
-  wa      meshRender.material = clickMaterial;
+        meshRender.material = clickMaterial;
     }
 
 
