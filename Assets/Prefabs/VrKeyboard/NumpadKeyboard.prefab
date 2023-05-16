@@ -527,7 +527,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1020193435752601047}
-  - component: {fileID: 6423140310751697120}
+  - component: {fileID: 5610670790002703451}
   m_Layer: 0
   m_Name: NumpadKeyboard
   m_TagString: Untagged
@@ -564,7 +564,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6423140310751697120
+--- !u!114 &5610670790002703451
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -573,16 +573,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1020193435752601046}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc4a4edde028c7847a7c2fcea98949e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 855c068e235cd84428155b7bd5ff54ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inputListeners:
     m_PersistentCalls:
       m_Calls: []
-  inputListeners2:
-    m_PersistentCalls:
-      m_Calls: []
-  displayText: {fileID: 1020193434816443029}
+  displayText: {fileID: 0}
 --- !u!1 &1073813906300389732
 GameObject:
   m_ObjectHideFlags: 0
@@ -2418,9 +2415,9 @@ MonoBehaviour:
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6423140310751697120}
-        m_TargetAssemblyTypeName: VrKeyboardController, Assembly-CSharp
-        m_MethodName: TypeLetter
+      - m_Target: {fileID: 5610670790002703451}
+        m_TargetAssemblyTypeName: VrNumpadController, Assembly-CSharp
+        m_MethodName: TypeNum
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 7936733487167312767}
@@ -2560,9 +2557,9 @@ MonoBehaviour:
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6423140310751697120}
-        m_TargetAssemblyTypeName: VrKeyboardController, Assembly-CSharp
-        m_MethodName: TypeLetter
+      - m_Target: {fileID: 5610670790002703451}
+        m_TargetAssemblyTypeName: VrNumpadController, Assembly-CSharp
+        m_MethodName: TypeNum
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 6567685702242445218}
@@ -2714,9 +2711,9 @@ MonoBehaviour:
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6423140310751697120}
-        m_TargetAssemblyTypeName: VrKeyboardController, Assembly-CSharp
-        m_MethodName: TypeLetter
+      - m_Target: {fileID: 5610670790002703451}
+        m_TargetAssemblyTypeName: VrNumpadController, Assembly-CSharp
+        m_MethodName: TypeNum
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 6753484966632942133}
@@ -2856,9 +2853,9 @@ MonoBehaviour:
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6423140310751697120}
-        m_TargetAssemblyTypeName: VrKeyboardController, Assembly-CSharp
-        m_MethodName: TypeLetter
+      - m_Target: {fileID: 5610670790002703451}
+        m_TargetAssemblyTypeName: VrNumpadController, Assembly-CSharp
+        m_MethodName: TypeNum
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2499972278030115439}
@@ -3087,9 +3084,9 @@ MonoBehaviour:
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6423140310751697120}
-        m_TargetAssemblyTypeName: VrKeyboardController, Assembly-CSharp
-        m_MethodName: TypeLetter
+      - m_Target: {fileID: 5610670790002703451}
+        m_TargetAssemblyTypeName: VrNumpadController, Assembly-CSharp
+        m_MethodName: TypeNum
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1762340690867493036}
@@ -3229,9 +3226,9 @@ MonoBehaviour:
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6423140310751697120}
-        m_TargetAssemblyTypeName: VrKeyboardController, Assembly-CSharp
-        m_MethodName: TypeLetter
+      - m_Target: {fileID: 5610670790002703451}
+        m_TargetAssemblyTypeName: VrNumpadController, Assembly-CSharp
+        m_MethodName: TypeNum
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 7200325539302085600}
@@ -3371,8 +3368,8 @@ MonoBehaviour:
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6423140310751697120}
-        m_TargetAssemblyTypeName: VrKeyboardController, Assembly-CSharp
+      - m_Target: {fileID: 5610670790002703451}
+        m_TargetAssemblyTypeName: VrNumpadController, Assembly-CSharp
         m_MethodName: RemoveLetter
         m_Mode: 1
         m_Arguments:
@@ -3506,8 +3503,8 @@ MonoBehaviour:
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6423140310751697120}
-        m_TargetAssemblyTypeName: VrKeyboardController, Assembly-CSharp
+      - m_Target: {fileID: 5610670790002703451}
+        m_TargetAssemblyTypeName: VrNumpadController, Assembly-CSharp
         m_MethodName: SendNumb
         m_Mode: 1
         m_Arguments:
@@ -3659,9 +3656,9 @@ MonoBehaviour:
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6423140310751697120}
-        m_TargetAssemblyTypeName: VrKeyboardController, Assembly-CSharp
-        m_MethodName: TypeLetter
+      - m_Target: {fileID: 5610670790002703451}
+        m_TargetAssemblyTypeName: VrNumpadController, Assembly-CSharp
+        m_MethodName: TypeNum
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2928259313802012877}
@@ -3789,9 +3786,9 @@ MonoBehaviour:
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6423140310751697120}
-        m_TargetAssemblyTypeName: VrKeyboardController, Assembly-CSharp
-        m_MethodName: TypeLetter
+      - m_Target: {fileID: 5610670790002703451}
+        m_TargetAssemblyTypeName: VrNumpadController, Assembly-CSharp
+        m_MethodName: TypeNum
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 6943558466485311051}
@@ -3931,9 +3928,9 @@ MonoBehaviour:
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6423140310751697120}
-        m_TargetAssemblyTypeName: VrKeyboardController, Assembly-CSharp
-        m_MethodName: TypeLetter
+      - m_Target: {fileID: 5610670790002703451}
+        m_TargetAssemblyTypeName: VrNumpadController, Assembly-CSharp
+        m_MethodName: TypeNum
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 4176768342376107189}
@@ -4085,9 +4082,9 @@ MonoBehaviour:
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6423140310751697120}
-        m_TargetAssemblyTypeName: VrKeyboardController, Assembly-CSharp
-        m_MethodName: TypeLetter
+      - m_Target: {fileID: 5610670790002703451}
+        m_TargetAssemblyTypeName: VrNumpadController, Assembly-CSharp
+        m_MethodName: TypeNum
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 8437691022946681823}
