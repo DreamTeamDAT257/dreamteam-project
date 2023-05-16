@@ -19,8 +19,11 @@ public class MainDropDownScript : MonoBehaviour, IControllerInteractable
 
     private SubberDropDownScript currentSelected;
 
+    public float moveOnOpen;
+
     public void PullUp()
     {
+        transform.position = transform.position + new Vector3(0, -moveOnOpen, 0);
         foreach (SubberDropDownScript subb in subbs)
         {
             subb.Hide();
@@ -30,6 +33,7 @@ public class MainDropDownScript : MonoBehaviour, IControllerInteractable
 
     public void Drop()
     {
+        transform.position = transform.position + new Vector3(0, moveOnOpen, 0);
         foreach (SubberDropDownScript subb in subbs)
         {
             subb.Show();
