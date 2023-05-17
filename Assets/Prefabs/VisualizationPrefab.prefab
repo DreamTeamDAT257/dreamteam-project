@@ -1696,7 +1696,7 @@ PrefabInstance:
     - target: {fileID: 2469818269641338926, guid: 1a1421ff8e7d0d2448199b54d956f31e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2469818269641338926, guid: 1a1421ff8e7d0d2448199b54d956f31e,
         type: 3}
@@ -1706,7 +1706,7 @@ PrefabInstance:
     - target: {fileID: 2469818269641338926, guid: 1a1421ff8e7d0d2448199b54d956f31e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 2469818269641338926, guid: 1a1421ff8e7d0d2448199b54d956f31e,
         type: 3}
@@ -2063,38 +2063,6 @@ Transform:
 --- !u!4 &3044105892008153928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3319104233816791434, guid: 1a1421ff8e7d0d2448199b54d956f31e,
-    type: 3}
-  m_PrefabInstance: {fileID: 302028805553572546}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3077896888534760751 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3352902918416119789, guid: 1a1421ff8e7d0d2448199b54d956f31e,
-    type: 3}
-  m_PrefabInstance: {fileID: 302028805553572546}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &302028805553572548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3077896888534760751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b0c61db0fe6474ea55b54fad3dff5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  defaultMaterial: {fileID: 2100000, guid: 5c7b4231ca710534ca56acbcfc44db08, type: 2}
-  hoverMaterial: {fileID: 2100000, guid: 8ea53f88fc1b9ff4b9059bec4b97a969, type: 2}
-  clickMaterial: {fileID: 2100000, guid: 476a3ee688ddca847a1de1d6b5ef531e, type: 2}
-  meshRender: {fileID: 3582084198762765562}
-  toScene: 0
---- !u!23 &3582084198762765562 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 3857081295569917496, guid: 1a1421ff8e7d0d2448199b54d956f31e,
     type: 3}
   m_PrefabInstance: {fileID: 302028805553572546}
   m_PrefabAsset: {fileID: 0}
