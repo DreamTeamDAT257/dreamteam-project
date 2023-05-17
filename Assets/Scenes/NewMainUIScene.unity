@@ -324,6 +324,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4973478063953131569, guid: 6015c793655818b47a491ce697837038,
+        type: 3}
+      propertyPath: m_text
+      value: Close
+      objectReference: {fileID: 0}
     - target: {fileID: 6009242117430963400, guid: 6015c793655818b47a491ce697837038,
         type: 3}
       propertyPath: m_RootOrder
@@ -383,6 +388,49 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InfoPopup
+      objectReference: {fileID: 0}
+    - target: {fileID: 7921459329136803007, guid: 6015c793655818b47a491ce697837038,
+        type: 3}
+      propertyPath: m_text
+      value: 'Welcome to our interactive program!
+
+        
+
+        Get ready
+        to explore global differences in UN Sustainability Goals data types. Compare
+        GDP, poverty, hunger, education, and more. Simply enter your choices, and
+        we''ll generate two cubes that highlight the relative differences between
+        your selected countries.
+
+        
+
+        * Select a data type you''re
+        interested in.
+
+        * Choose your first country and the corresponding
+        year.
+
+        * Pick a second country and enter another year related to
+        the same data type.
+
+        * Voila! Our dynamic cubes will reveal the
+        variations, helping you understand prosperity and resource accessibility
+        across nations.
+
+        
+
+        Let''s dive in and unlock a world of
+        insights!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7921459329136803007, guid: 6015c793655818b47a491ce697837038,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7921459329136803007, guid: 6015c793655818b47a491ce697837038,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6015c793655818b47a491ce697837038, type: 3}
