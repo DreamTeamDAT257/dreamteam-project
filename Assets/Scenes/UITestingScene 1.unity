@@ -3221,6 +3221,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2771837169752530469, guid: a6e4f4c82def9e541a18812fc5b79665,
+        type: 3}
+      propertyPath: val1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771837169752530469, guid: a6e4f4c82def9e541a18812fc5b79665,
+        type: 3}
+      propertyPath: val2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771837169752530469, guid: a6e4f4c82def9e541a18812fc5b79665,
+        type: 3}
+      propertyPath: year1
+      value: 1970
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771837169752530469, guid: a6e4f4c82def9e541a18812fc5b79665,
+        type: 3}
+      propertyPath: year2
+      value: 1970
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771837169752530469, guid: a6e4f4c82def9e541a18812fc5b79665,
+        type: 3}
+      propertyPath: countryName1
+      value: AFGHANISTAN
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771837169752530469, guid: a6e4f4c82def9e541a18812fc5b79665,
+        type: 3}
+      propertyPath: countryName2
+      value: AFGHANISTAN
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771837169752530469, guid: a6e4f4c82def9e541a18812fc5b79665,
+        type: 3}
+      propertyPath: visualDataType
+      value: mortality
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771837169752530470, guid: a6e4f4c82def9e541a18812fc5b79665,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771837169797054945, guid: a6e4f4c82def9e541a18812fc5b79665,
+        type: 3}
+      propertyPath: JsonFile
+      value: 
+      objectReference: {fileID: 4900000, guid: 9e4888a5f6e236e469bac32ad7dcc902, type: 3}
     - target: {fileID: 5966392977742811748, guid: a6e4f4c82def9e541a18812fc5b79665,
         type: 3}
       propertyPath: m_Name

@@ -889,7 +889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed5021cd508e3bd44ba7532e6df434c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JsonFile: {fileID: 4900000, guid: a5d82bd771249464e883deeb120597f4, type: 3}
+  JsonFile: {fileID: 4900000, guid: 9e4888a5f6e236e469bac32ad7dcc902, type: 3}
   myCountryList:
     country: []
 --- !u!1 &2771837169883815943
