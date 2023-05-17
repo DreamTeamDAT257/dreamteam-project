@@ -88,7 +88,7 @@ public class ComparisonScript : MonoBehaviour
         {
             val1 = (float) jsonCreator.myCountryList.getInformation(countryName1, year1).getSpecificInformation(visualDataType);
             val2 = (float) jsonCreator.myCountryList.getInformation(countryName2, year2).getSpecificInformation(visualDataType);
-            if ((val1 != -1) && (val2 != -1))
+            if ((val1 > 0) && (val2 > 0))
             {
                 CompareNumbers(val1, val2);
             }
@@ -150,23 +150,32 @@ public class ComparisonScript : MonoBehaviour
             {
                 secondHolderCube.transform.position += new Vector3((5f + Mathf.Pow(firstVal, 1f / 3f)), 0f, 0f);
             }
-            cubeScaleScript.ScaleCube(1f, secondHolderCube);
+            /*cubeScaleScript.ScaleCube(1f, secondHolderCube);
             mergeCubesScript.MergeCube(secondHolderCube);
             cubeScaleScript.ScaleCube((firstVal/secondVal), firstHolderCube);
-            mergeCubesScript.MergeCube(firstHolderCube);
+            mergeCubesScript.MergeCube(firstHolderCube);*/
+            InitializeCubes(secondHolderCube, firstHolderCube, (firstVal / secondVal));
 
         }
         else
         {
             secondHolderCube.transform.position += new Vector3(5f, 0f, 0f);
-            cubeScaleScript.ScaleCube(1f, firstHolderCube);
+            /*cubeScaleScript.ScaleCube(1f, firstHolderCube);
             mergeCubesScript.MergeCube(firstHolderCube);
             cubeScaleScript.ScaleCube((secondVal/firstVal), secondHolderCube);
-            mergeCubesScript.MergeCube(secondHolderCube);
-
+            mergeCubesScript.MergeCube(secondHolderCube);*/
+            InitializeCubes(firstHolderCube, secondHolderCube, (secondVal / firstVal));
         }
 
 
+    }
+
+    public void InitializeCubes(GameObject smallerCube, GameObject largerCube, float timesBigger)
+    {
+        cubeScaleScript.ScaleCube(1f, smallerCube);
+        mergeCubesScript.MergeCube(smallerCube);
+        cubeScaleScript.ScaleCube(timesBigger, largerCube);
+        mergeCubesScript.MergeCube(largerCube);
     }
 
     public void ClearAllChildren(GameObject parent)

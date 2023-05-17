@@ -5,15 +5,27 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/UIMainScene2.unity
-    guid: 663b66ba2357506498153df0616e2662
-  - enabled: 1
-    path: Assets/Scenes/3.unity
+    path: Assets/Scenes/Village.unity
     guid: 2318e34865203974aad1fedc48162d64
   - enabled: 0
-    path: Assets/Scenes/UiMainScene.unity
-    guid: f477b4244ea03df47b65d8bbee2a9bba
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/NewMainUIScene.unity
+    guid: 125a871954d70714c82045f6cd835f71
+  - enabled: 1
+    path: Assets/Scenes/Desert.unity
+    guid: 1797db64e16b9d843b76b01014388d6a
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 593b07e4c4b2b6f4e8b7beaa18e427e4
+  - enabled: 1
+    path: Assets/3DAssets/Snow Mountain/Scenes/SnowMountains.unity
+    guid: 80a7b5808b43ae245bc2c97ce3cfc017
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
