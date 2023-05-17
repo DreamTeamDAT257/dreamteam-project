@@ -8,10 +8,16 @@ using UnityEngine.UI;
 public class ComparisonScript : MonoBehaviour
 {
 
-    public float val1;
-    public float val2;
+    public float val1 = 0;
+    public float val2 = 0;
 
-    public string visualDataType;
+    public string visualDataType = null;
+    
+    public int year1 = 0;
+    public int year2 = 0;
+    
+    public string countryName1 = null;
+    public string countryName2 = null;
 
     public GameObject firstCube;
     public GameObject secondCube;
@@ -25,24 +31,90 @@ public class ComparisonScript : MonoBehaviour
     public CubeScaleScript cubeScaleScript;
     public MergeCubesScript mergeCubesScript;
     public JSONCreator jsonCreator;
-    
 
-    public void GetFirstDropdownValue(string countryName, int year)
+    public void getVisualDataType(string dataType)
     {
-        val1 = (float) jsonCreator.myCountryList.getInformation(countryName, year).getSpecificInformation(visualDataType);
+        if(dataType == "mortality" || dataType == "life_expectancy" || dataType == "population" || dataType == "education_spending" || dataType == "health_spending" || dataType == "youth_literacy" || dataType == "primary_school_rate" || dataType == "secondary_school_rate" || dataType == "thinness" || dataType == "gdp")
+        {
+            visualDataType = dataType;
+            checkFinishedInput();
+        }
+        
+    }
+
+    public void getFirstYear(int year)
+    {
+        year1 = year;
+        if(jsonCreator.myCountryList.getInformation(countryName1, year1) != null)
+        {
+            checkFinishedInput();
+        }
+        
+    }
+
+    public void getSecondYear(int year)
+    {
+        year2 = year;
+        if(jsonCreator.myCountryList.getInformation(countryName2, year2) != null)
+        {
+            checkFinishedInput();
+        }
+        
+    }
+
+    public void getFirstName(string countryName)
+    {
+        if(jsonCreator.myCountryList.getCountryByName(countryName) != null)
+        {
+            countryName1 = countryName;
+            checkFinishedInput();
+        }
+        
+    }
+
+    public void getSecondName(string countryName)
+    {
+        if(jsonCreator.myCountryList.getCountryByName(countryName) != null)
+        {
+            countryName2 = countryName;
+            checkFinishedInput();
+        }
+        
+    }
+
+    public void checkFinishedInput()
+    {
+        if (year1 != 0 && year2 != 0 && countryName1 != null && countryName2 != null && visualDataType != null )
+        {
+            val1 = (float) jsonCreator.myCountryList.getInformation(countryName1, year1).getSpecificInformation(visualDataType);
+            val2 = (float) jsonCreator.myCountryList.getInformation(countryName2, year2).getSpecificInformation(visualDataType);
+            if ((val1 != -1) && (val2 != -1))
+            {
+                CompareNumbers(val1, val2);
+            }
+        }
+            
+    }
+    
+    /*
+    public void GetFirstDropdownValue(string countryName)
+    {
+        val1 = (float) jsonCreator.myCountryList.getMostRecentYear(countryName).getSpecificInformation(visualDataType);
         //val1 = optionValues[countryName];
+        
+        
         if((val1 != -1) && (val2 != -1))
         {
             CompareNumbers(val1, val2);
         } 
         
     }
-    public void GetSecondDropdownValue(string countryName, int year)
+    public void GetSecondDropdownValue(string countryName)
     {
 
         //dropdown.options[dropdown.value].text
         //val2 = optionValues[countryName];
-        val2 = (float) jsonCreator.myCountryList.getInformation(countryName, year).getSpecificInformation(visualDataType);
+        val2 = (float) jsonCreator.myCountryList.getMostRecentYear(countryName).getSpecificInformation(visualDataType);
         if ((val1 != -1) && (val2 != -1))
         {
             CompareNumbers(val1, val2);
@@ -51,6 +123,7 @@ public class ComparisonScript : MonoBehaviour
 
 
     }
+    */
     public void CompareNumbers(float firstVal, float secondVal)
     {
         ClearAllChildren(firstCube);
@@ -113,13 +186,14 @@ public class ComparisonScript : MonoBehaviour
         jsonCreator = jsonCreatorObject.GetComponent<JSONCreator>();
         //cubeScaleScript = new CubeScaleScript();
         //mergeCubesScript = new MergeCubesScript();
+        /*
         val1 = -1;
         val2 = -1;
         optionValues["Sweden"] = 3f;
         optionValues["Norge"] = 9000f;
         optionValues["Denmark"] = 12000f;
         //optionValues[2] = 143f;
-
+    */
 
     }
 
@@ -128,6 +202,5 @@ public class ComparisonScript : MonoBehaviour
     {
         
     }
-    //gör en metod som jämför två tal och uppdatera och ta bort kuberna utefter det
     
 }
