@@ -610,7 +610,7 @@ GameObject:
   - component: {fileID: 158722242}
   - component: {fileID: 158722241}
   - component: {fileID: 158722240}
-  - component: {fileID: 158722238}
+  - component: {fileID: 158722244}
   m_Layer: 0
   m_Name: Backround1interactcube (2)
   m_TagString: Untagged
@@ -618,33 +618,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &158722238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 158722237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9e80afbae1a97d4db5e2c94590d3a59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  defaultMaterial: {fileID: 0}
-  hoverMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
-  clickMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
-  meshRender: {fileID: 0}
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  defaultMaterial: {fileID: 0}
-  hoverMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
-  clickMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
-  meshRender: {fileID: 0}
-  toScene: 4
 --- !u!65 &158722240
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -723,6 +696,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &158722244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158722237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b0c61db0fe6474ea55b54fad3dff5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
+  clickMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
+  meshRender: {fileID: 0}
+  toScene: 4
 --- !u!1001 &212345134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1006,7 +999,7 @@ GameObject:
   - component: {fileID: 300869946}
   - component: {fileID: 300869945}
   - component: {fileID: 300869944}
-  - component: {fileID: 300869942}
+  - component: {fileID: 300869948}
   m_Layer: 0
   m_Name: Backround1interactcube (3)
   m_TagString: Untagged
@@ -1014,33 +1007,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &300869942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300869941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9e80afbae1a97d4db5e2c94590d3a59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  defaultMaterial: {fileID: 0}
-  hoverMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
-  clickMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
-  meshRender: {fileID: 0}
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  defaultMaterial: {fileID: 0}
-  hoverMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
-  clickMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
-  meshRender: {fileID: 0}
-  toScene: 2
 --- !u!65 &300869944
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1119,6 +1085,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &300869948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300869941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b0c61db0fe6474ea55b54fad3dff5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
+  clickMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
+  meshRender: {fileID: 0}
+  toScene: 2
 --- !u!1 &302303205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,7 +1872,7 @@ GameObject:
   - component: {fileID: 467647600}
   - component: {fileID: 467647599}
   - component: {fileID: 467647598}
-  - component: {fileID: 467647603}
+  - component: {fileID: 467647602}
   m_Layer: 0
   m_Name: Backround1interactcube
   m_TagString: Untagged
@@ -1972,7 +1958,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &467647603
+--- !u!114 &467647602
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1981,43 +1967,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 467647597}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9e80afbae1a97d4db5e2c94590d3a59, type: 3}
+  m_Script: {fileID: 11500000, guid: f8b0c61db0fe6474ea55b54fad3dff5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  defaultMaterial: {fileID: 0}
-  hoverMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
-  clickMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
-  meshRender: {fileID: 0}
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   defaultMaterial: {fileID: 0}
   hoverMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
   clickMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
@@ -3387,7 +3342,7 @@ GameObject:
   - component: {fileID: 1287774071}
   - component: {fileID: 1287774070}
   - component: {fileID: 1287774069}
-  - component: {fileID: 1287774067}
+  - component: {fileID: 1287774073}
   m_Layer: 0
   m_Name: Backround1interactcube (1)
   m_TagString: Untagged
@@ -3395,33 +3350,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1287774067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287774066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9e80afbae1a97d4db5e2c94590d3a59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  defaultMaterial: {fileID: 0}
-  hoverMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
-  clickMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
-  meshRender: {fileID: 0}
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  defaultMaterial: {fileID: 0}
-  hoverMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
-  clickMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
-  meshRender: {fileID: 0}
-  toScene: 0
 --- !u!65 &1287774069
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3500,6 +3428,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1287774073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287774066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b0c61db0fe6474ea55b54fad3dff5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
+  clickMaterial: {fileID: 2100000, guid: 2c3e8e40ff684a0408fb24f95ef53cda, type: 2}
+  meshRender: {fileID: 0}
+  toScene: 0
 --- !u!1 &1393462038
 GameObject:
   m_ObjectHideFlags: 0
