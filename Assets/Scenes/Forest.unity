@@ -28862,12 +28862,12 @@ PrefabInstance:
     - target: {fileID: 2771837169752530469, guid: a6e4f4c82def9e541a18812fc5b79665,
         type: 3}
       propertyPath: year1
-      value: 1970
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2771837169752530469, guid: a6e4f4c82def9e541a18812fc5b79665,
         type: 3}
       propertyPath: year2
-      value: 1971
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2771837169752530469, guid: a6e4f4c82def9e541a18812fc5b79665,
         type: 3}
@@ -28877,17 +28877,17 @@ PrefabInstance:
     - target: {fileID: 2771837169752530469, guid: a6e4f4c82def9e541a18812fc5b79665,
         type: 3}
       propertyPath: countryName1
-      value: AFGHANISTAN
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2771837169752530469, guid: a6e4f4c82def9e541a18812fc5b79665,
         type: 3}
       propertyPath: countryName2
-      value: AFGHANISTAN
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2771837169752530469, guid: a6e4f4c82def9e541a18812fc5b79665,
         type: 3}
       propertyPath: visualDataType
-      value: mortality
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2771837169752530469, guid: a6e4f4c82def9e541a18812fc5b79665,
         type: 3}
