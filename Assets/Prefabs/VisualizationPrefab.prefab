@@ -839,9 +839,6 @@ MonoBehaviour:
   countryName2: 
   firstCube: {fileID: 4574396181125436546}
   secondCube: {fileID: 4574396180726902923}
-  cubeScaleObject: {fileID: 2771837168875787561}
-  mergeCubeObject: {fileID: 2771837169735974650}
-  jsonCreatorObject: {fileID: 2771837169797054944}
   cubeScaleScript: {fileID: 0}
   mergeCubesScript: {fileID: 0}
   jsonCreator: {fileID: 0}
@@ -1776,7 +1773,7 @@ PrefabInstance:
     - target: {fileID: 4621582618132481476, guid: 1a1421ff8e7d0d2448199b54d956f31e,
         type: 3}
       propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4621582618132481476, guid: 1a1421ff8e7d0d2448199b54d956f31e,
         type: 3}
