@@ -24,9 +24,9 @@ public class ComparisonScript : MonoBehaviour
 
     Dictionary<string, float> optionValues = new Dictionary<string, float>();
 
-    public GameObject cubeScaleObject;
-    public GameObject mergeCubeObject;
-    public GameObject jsonCreatorObject;
+    //public GameObject cubeScaleObject;
+    //public GameObject mergeCubeObject;
+    //public GameObject jsonCreatorObject;
 
     public CubeScaleScript cubeScaleScript;
     public MergeCubesScript mergeCubesScript;
@@ -190,9 +190,6 @@ public class ComparisonScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cubeScaleScript = cubeScaleObject.GetComponent<CubeScaleScript>();
-        mergeCubesScript = mergeCubeObject.GetComponent<MergeCubesScript>();
-        jsonCreator = jsonCreatorObject.GetComponent<JSONCreator>();
         //cubeScaleScript = new CubeScaleScript();
         //mergeCubesScript = new MergeCubesScript();
         /*
