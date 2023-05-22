@@ -13,17 +13,19 @@ public class BaseButtonScript : MonoBehaviour, IControllerInteractable
     public MeshRenderer meshRender;
 
 
-
+    /**UninteractButton is called when the user stops either hovering or clicking on the button**/
     public virtual void UninteractButton()
     {
         meshRender.material = defaultMaterial;
     }
 
+    /**HoveringButton is called when the user hovers the button**/
     public virtual void HoveringButton()
     {
         meshRender.material = hoverMaterial;
     }
 
+    /**ClickingButton is called when the user clicks the button**/
     public virtual void ClickingButton()
     {
         meshRender.material = clickMaterial;
