@@ -2671,6 +2671,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 3352902919672332338, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3352902919853534141, guid: 1a1421ff8e7d0d2448199b54d956f31e,
         type: 3}
       propertyPath: m_IsActive
@@ -2826,6 +2831,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sweden
       objectReference: {fileID: 0}
+    - target: {fileID: 5913941560564840056, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a44dca7e271d28d498b40de7a58e816a, type: 2}
     - target: {fileID: 6102577551486125919, guid: 1a1421ff8e7d0d2448199b54d956f31e,
         type: 3}
       propertyPath: inputListeners.m_PersistentCalls.m_Calls.Array.size
@@ -2996,6 +3006,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a03ba1cba860264a9a065638940f9a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &5786612884579010137 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3352902919672332338, guid: 1a1421ff8e7d0d2448199b54d956f31e,
+    type: 3}
+  m_PrefabInstance: {fileID: 9136056187559036523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &3113067248658939183
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5786612884579010137}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0009999999, y: 0.0050000013, z: 0.0001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &5820367079942021089 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3319104233816791434, guid: 1a1421ff8e7d0d2448199b54d956f31e,

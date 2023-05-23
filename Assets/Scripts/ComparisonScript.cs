@@ -34,6 +34,7 @@ public class ComparisonScript : MonoBehaviour
 
     public void getVisualDataType(string dataType)
     {
+        Debug.Log(dataType);
         if(dataType == "mortality" || dataType == "life_expectancy" || dataType == "population" || dataType == "education_spending" || dataType == "health_spending" || dataType == "youth_literacy" || dataType == "primary_school_rate" || dataType == "secondary_school_rate" || dataType == "thinness" || dataType == "gdp")
         {
             visualDataType = dataType;

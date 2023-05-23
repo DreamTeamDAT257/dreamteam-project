@@ -1294,8 +1294,14 @@ MonoBehaviour:
   defaultMaterial: {fileID: 2100000, guid: a44dca7e271d28d498b40de7a58e816a, type: 2}
   hoverMaterial: {fileID: 2100000, guid: e50fe2492bd614943bdb8ee8ced37dde, type: 2}
   clickMaterial: {fileID: 2100000, guid: 38d08284f0d97ac459bafffd8ed914ea, type: 2}
-  meshRender: {fileID: 2469818269606492874}
-  toScene: 0
+  meshRender: {fileID: 3857081296234684903}
+  toScene: 1
+--- !u!23 &3857081296234684903 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 5e740a85db1f5fb45b26e07b4dafa478,
+    type: 3}
+  m_PrefabInstance: {fileID: 2469818267825192291}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2469818268138886892
 PrefabInstance:
   m_ObjectHideFlags: 0
