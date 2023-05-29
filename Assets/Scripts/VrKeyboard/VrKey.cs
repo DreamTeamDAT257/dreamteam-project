@@ -6,6 +6,7 @@ public class VrKey : BaseButtonScript
 {
     public char character;
 
+    // Moved activation of button from ClickToHover() to HoverToClick, makes typing more smooth
     public override void HoverToClick()
     {
         ClickingButton();

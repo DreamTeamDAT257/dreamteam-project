@@ -5,13 +5,6 @@ using UnityEngine.Events;
 
 public class MainDropDownScript : MonoBehaviour, IControllerInteractable
 {
-    public void Testing(string name, int year)
-    {
-        Debug.Log(name);
-        Debug.Log(year);
-    }
-
-
     public SubberDropDownScript[] subbs;
     public bool Dropped;
 
@@ -21,6 +14,8 @@ public class MainDropDownScript : MonoBehaviour, IControllerInteractable
 
     public float moveOnOpen;
 
+
+    /**Pulls up dropdown menu**/
     public void PullUp()
     {
         transform.position = transform.position + new Vector3(0, -moveOnOpen, 0);
@@ -31,6 +26,7 @@ public class MainDropDownScript : MonoBehaviour, IControllerInteractable
         Dropped = false;
     }
 
+    /**Pulls down dropdown menu**/
     public void Drop()
     {
         transform.position = transform.position + new Vector3(0, moveOnOpen, 0);
@@ -42,6 +38,7 @@ public class MainDropDownScript : MonoBehaviour, IControllerInteractable
     }
 
 
+    /**Called when a new selection is made, sends selection to listeners**/
     public void NewSelection(BaseButtonScript selectedBackReferance)
     {
         if (currentSelected == selectedBackReferance)
@@ -62,6 +59,7 @@ public class MainDropDownScript : MonoBehaviour, IControllerInteractable
     }
 
 
+    #region interface implementation
     public void Click()
     {
         
@@ -98,4 +96,5 @@ public class MainDropDownScript : MonoBehaviour, IControllerInteractable
             Drop();
         }
     }
+    #endregion
 }

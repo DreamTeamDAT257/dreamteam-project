@@ -12,6 +12,7 @@ public class VrNumpadController : MonoBehaviour
 
     private string currentText = "";
 
+    /**Activated when number is typed**/
     public void TypeNum(BaseButtonScript pressed)
     {
         if(currentText.Length < 4)
@@ -22,6 +23,7 @@ public class VrNumpadController : MonoBehaviour
     }
 
 
+    /**Sends typed number to listeners**/
     public void SendNumb()
     {
         //gör om text till int
@@ -30,6 +32,7 @@ public class VrNumpadController : MonoBehaviour
         
     }
 
+    /**Removes most rightward number**/
     public void RemoveLetter()
     {
         if (currentText.Length > 0)
@@ -38,6 +41,7 @@ public class VrNumpadController : MonoBehaviour
         }
     }
 
+    /**Refreshes display**/
     public void UpdateDisplayTest()
     {
         if ((Time.fixedTime*2) % 2 > 0.5)

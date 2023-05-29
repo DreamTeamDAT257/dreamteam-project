@@ -16,7 +16,7 @@ public class ControllerScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Usage
+        
         RaycastHit hit;
         IControllerInteractable newInteracting;
         if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 10, layerMask))
@@ -119,7 +119,6 @@ public class ControllerScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("aaaa");
         if (other.gameObject.layer == 6)
         {
             aimableCount++;

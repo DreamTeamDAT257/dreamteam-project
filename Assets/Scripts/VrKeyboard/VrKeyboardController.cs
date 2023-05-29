@@ -12,16 +12,19 @@ public class VrKeyboardController : MonoBehaviour
 
     private string currentText = "";
 
+    /**Activated when letter is typed**/
     public void TypeLetter(BaseButtonScript pressed)
     {
         currentText += ((VrKey)pressed).character;
     }
 
+    /**Sends typed text to listeners**/
     public void SendTyped()
     {
         inputListeners.Invoke(currentText);
     }
 
+    /**Probably not used anymore---**/
     public void SendNumb()
     {
         //gör om text till int
@@ -29,7 +32,9 @@ public class VrKeyboardController : MonoBehaviour
         inputListeners2.Invoke(currentNum);
         
     }
+    //---
 
+    /**Removes most rightward letter**/
     public void RemoveLetter()
     {
         if (currentText.Length > 0)
@@ -38,6 +43,7 @@ public class VrKeyboardController : MonoBehaviour
         }
     }
 
+    /**Refreshes display**/
     public void UpdateDisplayTest()
     {
         if ((Time.fixedTime*2) % 2 > 0.5)
